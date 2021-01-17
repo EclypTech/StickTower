@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFaller : MonoBehaviour
 {
     public Transform target;
-    public float smoothSpeed = .3f;
+    public float smoothSpeed = .6f;
   
 
     // Update is called once per frame
