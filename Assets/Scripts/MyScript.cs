@@ -42,14 +42,12 @@ public class MyScript : MonoBehaviour
                 jump = true;
                 rigidbody.velocity += Vector2.up * jumpspeed;
 
-
             }
 
             if (jump && !joybutton.Pressed)
             {
                 jump = false;
             }
-
         }
         else
         {

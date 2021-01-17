@@ -14,7 +14,7 @@ public class CameraFaller : MonoBehaviour
         if(target.position.y > transform.position.y)
         {
             Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, newPos, smoothSpeed);
+            transform.position = newPos;
 
         }
     }
