@@ -31,17 +31,17 @@ public class MyScript : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadius, whatisGround);
 
+        var rigidbody = GetComponent<Rigidbody2D>();
+
+        rigidbody.velocity = new Vector2(joystick.Horizontal * speed, rigidbody.velocity.y);
 
         if (isGrounded == true)
         {
-            var rigidbody = GetComponent<Rigidbody2D>();
-
-            rigidbody.velocity = new Vector2(joystick.Horizontal * speed, rigidbody.velocity.y);
-
             if (!jump && joybutton.Pressed)
             {
                 jump = true;
                 rigidbody.velocity += Vector2.up * jumpspeed;
+
 
             }
 
@@ -53,9 +53,7 @@ public class MyScript : MonoBehaviour
         }
         else
         {
-            var rigidbody = GetComponent<Rigidbody2D>();
-
-            rigidbody.velocity = new Vector2(joystick.Horizontal, rigidbody.velocity.y);
+            jump = false;
         }
 
 
