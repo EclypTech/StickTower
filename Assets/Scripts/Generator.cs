@@ -6,8 +6,6 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
     public GameObject platformPrefab;
-    //public GameObject leftWall;
-    //public GameObject rightWall;
 
     public int numberOfPlatforms = 50 ;
     public float levelWidth = 100f;
