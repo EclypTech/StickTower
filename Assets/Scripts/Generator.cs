@@ -7,29 +7,42 @@ public class Generator : MonoBehaviour
 {
     public GameObject platformPrefab;
 
-    public int numberOfPlatforms = 50 ;
+    public int numberOfPlatforms = 5 ;
     public float levelWidth = 100f;
     public float minY = .2f;
     public float maxY = .60f;
+    public Vector3 ye = new Vector3();
 
 
     void Start()
     {
+        GeneratorGeneral();
 
-        Vector3 spawnPosition = new Vector3();
 
-        for (int i = 0; i< numberOfPlatforms; i++)
+    }
+
+    void Update()
+    {
+        if (GetComponentInChildren<MyScript>().score == 5)
         {
-            
-            spawnPosition.y += Random.Range(minY, maxY);
-            spawnPosition.x = Random.Range(-levelWidth, levelWidth);
-            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+            Debug.Log("yarak");
+            GeneratorGeneral();
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GeneratorGeneral()
     {
-        
+
+        Vector3 spawnPosition = new Vector3();
+        spawnPosition.y = ye.y;
+        Debug.Log("kürek");
+        for (int i = 0; i < numberOfPlatforms; i++)
+        {
+            spawnPosition.y += Random.Range(minY, maxY);
+            spawnPosition.x = Random.Range(-levelWidth, levelWidth);
+            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+            ye.y = spawnPosition.y; 
+        }
+
     }
 }

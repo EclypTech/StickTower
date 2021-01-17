@@ -9,12 +9,12 @@ public class MyScript : MonoBehaviour
     public int speed;
     public int jumpspeed;
     protected bool jump;
+    public int score = 0;
 
     private bool isGrounded;
     public Transform groundcheck;
     public float checkRadius;
     public LayerMask whatisGround;
-
 
 
 
