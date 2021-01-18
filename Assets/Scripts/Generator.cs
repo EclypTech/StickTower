@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -7,11 +5,13 @@ public class Generator : MonoBehaviour
 {
     public GameObject platformPrefab;
 
-    public int numberOfPlatforms = 5 ;
-    public float levelWidth = 100f;
-    public float minY = .2f;
-    public float maxY = .60f;
+    public int numberOfPlatforms = 3;
+    public float levelWidth = 2.7f;
+    public float minY = 1;
+    public float maxY = 1;
     public Vector3 ye = new Vector3();
+    public int num = 3;
+    public int score = 0;
 
 
     void Start()
@@ -23,11 +23,14 @@ public class Generator : MonoBehaviour
 
     void Update()
     {
-        if (GetComponentInChildren<MyScript>().score == 5)
+        if (score == num)
         {
             Debug.Log("yarak");
+            GameObject.Find("Platform_Basic").GetComponent<BoxCollider2D>().enabled = true; 
             GeneratorGeneral();
+            num += 3;
         }
+
     }
 
     public void GeneratorGeneral()
@@ -41,7 +44,8 @@ public class Generator : MonoBehaviour
             spawnPosition.y += Random.Range(minY, maxY);
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
-            ye.y = spawnPosition.y; 
+            ye.y = spawnPosition.y;
+            
         }
 
     }
