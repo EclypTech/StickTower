@@ -23,6 +23,7 @@ public class Counter : MonoBehaviour
         {
             collision.GetComponent<Generator>().score += 1;    
             GetComponent<BoxCollider2D>().enabled = false;
+            
         }
 
 

@@ -25,7 +25,6 @@ public class Generator : MonoBehaviour
     {
         if (score == num)
         {
-            Debug.Log("yarak");
             GameObject.Find("Platform_Basic").GetComponent<BoxCollider2D>().enabled = true; 
             GeneratorGeneral();
             num += 3;
@@ -38,7 +37,7 @@ public class Generator : MonoBehaviour
 
         Vector3 spawnPosition = new Vector3();
         spawnPosition.y = ye.y;
-        Debug.Log("kürek");
+
         for (int i = 0; i < numberOfPlatforms; i++)
         {
             spawnPosition.y += Random.Range(minY, maxY);

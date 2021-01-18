@@ -26,8 +26,8 @@ public class MyScript : MonoBehaviour
     
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadius, whatisGround);
 
@@ -37,12 +37,15 @@ public class MyScript : MonoBehaviour
 
         if (isGrounded == true)
         {
+
             if (!jump && joybutton.Pressed)
             {
-                jump = true;
-                rigidbody.velocity += Vector2.up * jumpspeed;
-
-
+                if (rigidbody.velocity.y == 0)
+                {
+                    jump = true;
+                    rigidbody.velocity += Vector2.up * jumpspeed;
+                }
+                
             }
 
             if (jump && !joybutton.Pressed)
@@ -54,7 +57,6 @@ public class MyScript : MonoBehaviour
         {
             jump = false;
         }
-
 
 
 
