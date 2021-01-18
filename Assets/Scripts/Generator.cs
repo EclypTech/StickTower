@@ -5,10 +5,10 @@ public class Generator : MonoBehaviour
 {
     public GameObject platformPrefab;
 
-    public int numberOfPlatforms = 3;
+    public int numberOfPlatforms = 5;
     public float levelWidth = 2.7f;
-    public float minY = 1;
-    public float maxY = 1;
+    public float minY = 1.5f;
+    public float maxY = 1.5f;
     public Vector3 ye = new Vector3();
     public int num = 3;
     public int score = 0;

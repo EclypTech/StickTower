@@ -8,7 +8,7 @@ public class MyScript : MonoBehaviour
     protected JoyButton joybutton;
     public int speed;
     public int jumpspeed;
-    protected bool jump;
+    public bool jump;
 
 
     private bool isGrounded;
@@ -41,6 +41,7 @@ public class MyScript : MonoBehaviour
             {
                 jump = true;
                 rigidbody.velocity += Vector2.up * jumpspeed;
+
 
             }
 
