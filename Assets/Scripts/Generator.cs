@@ -17,17 +17,16 @@ public class Generator : MonoBehaviour
     void Start()
     {
         GeneratorGeneral();
-
-
     }
 
     void Update()
     {
         if (score == num)
         {
-            GameObject.Find("Platform_Basic").GetComponent<BoxCollider2D>().enabled = true; 
-            GeneratorGeneral();
             num += 3;
+            GeneratorGeneral();
+            GameObject.Find("Platform_Basic(Clone)").GetComponent<BoxCollider2D>().enabled = true; 
+
         }
 
     }
