@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 75581049}
   - component: {fileID: 75581053}
   m_Layer: 5
-  m_Name: Canvaspause
+  m_Name: PauseCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1228,7 +1228,7 @@ RectTransform:
   m_GameObject: {fileID: 1067157305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2683153, y: 2.2683153, z: 2.2683153}
+  m_LocalScale: {x: 3.234164, y: 3.234164, z: 3.234164}
   m_Children:
   - {fileID: 310219584}
   m_Father: {fileID: 1256820246}
@@ -1236,7 +1236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 190}
+  m_AnchoredPosition: {x: -3.4, y: -381}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067157307
@@ -3082,8 +3082,8 @@ MonoBehaviour:
   platformPrefab: {fileID: 3411783563400444268, guid: 241e6617afdd6a543b9c02508c5f9732, type: 3}
   numberOfPlatforms: 5
   levelWidth: 2.5
-  minY: 1.5
-  maxY: 1.5
+  minY: 1.2
+  maxY: 1.2
   ye: {x: 0, y: 0, z: 0}
   num: 3
   score: 0
@@ -3129,7 +3129,7 @@ RectTransform:
   m_GameObject: {fileID: 2130033253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2683153, y: 2.2683153, z: 2.2683153}
+  m_LocalScale: {x: 4.695362, y: 4.695362, z: 4.695362}
   m_Children:
   - {fileID: 704975639}
   m_Father: {fileID: 1256820246}
@@ -3137,7 +3137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 302}
+  m_AnchoredPosition: {x: -0.8, y: -150}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2130033255

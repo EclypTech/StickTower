@@ -5,9 +5,9 @@ public class Generator : MonoBehaviour
 {
     public GameObject platformPrefab;   // Define our game object platform prefab now.
     public int numberOfPlatforms = 5;   // Number of spawn platform component.
-    public float levelWidth = 2.7f;     // Lenght between serial platforms. 
-    public float minY = 1.5f;           // Lower limit of Y.
-    public float maxY = 1.5f;           // Lower limit of X.
+    public float levelWidth = 2.5f;     // Horizontal Range. 
+    public float minY = 1.3f;           // Lower limit of Y.
+    public float maxY = 1.3f;           // Lower limit of Y.
     public Vector3 ye = new Vector3();  // New vector that records the spawn coordinate.
     public int num = 3;                 // Num = 3 for limit of the spawn number.
     public int score = 0;               // Score = 0 which means number of climbed platforms.
