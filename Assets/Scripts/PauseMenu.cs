@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement; // It used when we create main menu which mea
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false; 
-    public GameObject pauseMenuUI; // Define game object which means canvaspause.
-
+    public GameObject PauseCanvas; // Define game object which means canvaspause.(PauseMenu)
+    public GameObject JoystickCanvas; // Define Game Object which is closing.(GameCanvas)
 
     void Update()
     {
@@ -16,18 +16,18 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume () // Resume button function.
     {
-        pauseMenuUI.SetActive(false); // Close the pause menu.
+        JoystickCanvas.SetActive(true);  // Active joystics canvas.
+        PauseCanvas.SetActive(false); // Close the pause menu.
         Time.timeScale = 1f;          // Resume the time.
         GameIsPaused = false;         // Value is false.
-
     }
 
     public void Pause ()  // Pause function.
     {
-        pauseMenuUI.SetActive(true);  // Open the pause menu.
+        JoystickCanvas.SetActive(false);  // Close joystics canvas.
+        PauseCanvas.SetActive(true);  // Open the pause menu.
         Time.timeScale = 0f;          // Freeze the time.
         GameIsPaused = true;          // Value is true.
-
     }
 
     public void LoadMenu() // Main menu function. Triggered in the pause menu.
@@ -44,8 +44,4 @@ public class PauseMenu : MonoBehaviour
         Application.Quit(); //Quit game. It didnt works in the editor part.
     }
 
-    public void PauseButton() // Assign this function to button where means in to the game scene upper right.
-    {
-        Pause(); // Pause function.(Line33)
-    }
 }

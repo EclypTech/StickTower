@@ -21,7 +21,5 @@ public class DestroyPlayer : MonoBehaviour
             Destroy(gameObject); // Destroy player.
         }
 
-
-
     }
 }
