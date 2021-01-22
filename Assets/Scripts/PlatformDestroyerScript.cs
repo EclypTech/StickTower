@@ -3,27 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformDestroyerScript : MonoBehaviour
-
 {
-    public GameObject PlatformDestroyerPoint;
+    public GameObject PlatformDestroyerPoint; // Define Game object.
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        PlatformDestroyerPoint = GameObject.Find("PlatformDestroyerPoint");
-
+        PlatformDestroyerPoint = GameObject.Find("PlatformDestroyerPoint"); 
+        //When game start, find destroyer point which means tracking lower from the camera.
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(transform.position.y < PlatformDestroyerPoint.transform.position.y)
+            // If any platform has a lower vertical value from the lower limit of camera..
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // Destroy the platform.
         }
-
-
-
     }
 }
