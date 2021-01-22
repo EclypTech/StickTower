@@ -8,19 +8,10 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false; 
     public GameObject pauseMenuUI; // Define game object which means canvaspause.
 
+
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape)) 
-        // This part for computer. We can remove.(trigger function when click esc.)
-        {
-            if(GameIsPaused) // If..
-            {
-                Resume(); // Resume if game is pause.
-            }else
-            {
-                Pause(); // Pause the game if game is fies.
-            }
-        }
+
     }
 
     public void Resume () // Resume button function.
@@ -28,6 +19,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false); // Close the pause menu.
         Time.timeScale = 1f;          // Resume the time.
         GameIsPaused = false;         // Value is false.
+
     }
 
     public void Pause ()  // Pause function.
@@ -35,6 +27,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);  // Open the pause menu.
         Time.timeScale = 0f;          // Freeze the time.
         GameIsPaused = true;          // Value is true.
+
     }
 
     public void LoadMenu() // Main menu function. Triggered in the pause menu.
