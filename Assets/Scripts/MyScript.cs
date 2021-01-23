@@ -17,7 +17,7 @@ public class MyScript : MonoBehaviour
 
 
     //Stamina bar part.
-    public int maxStamina = 100;
+    public int maxStamina = 10;
     public int currentStamina;
     public StaminaBar staminaBar;
 

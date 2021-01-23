@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class StaminaBar : MonoBehaviour
 {
     public Slider slider;
+    public Gradient grad;
 
     public void SetMaxStamina(int stamina)
     {
@@ -18,11 +19,6 @@ public class StaminaBar : MonoBehaviour
         slider.value = stamina;
     }
 
-
-
-
-
-
     void Start()
     {
         
@@ -30,6 +26,11 @@ public class StaminaBar : MonoBehaviour
 
     void Update()
     {
-        
+        slider.value -= Time.deltaTime*5;
+
+        if(slider.value <= 0)
+        {
+            GameObject.Find("Player").GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
 }
