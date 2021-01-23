@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class XPsystem : MonoBehaviour
 {
-    public Transform player; // Define player to transform coordinates.
     public Text scoreText;   // Define score text.
 
     void Start()
@@ -15,12 +14,13 @@ public class XPsystem : MonoBehaviour
 
     void Update()
     {
+        GameObject theplayer = GameObject.Find("Player"); // Find player for get generator script.
+        Generator generatorScript = theplayer.GetComponent<Generator>();  // Find generator for get score data.
 
-        scoreText.text = player.position.y.ToString("0"); // Equalize the score text with player vertical coordinate.
+        scoreText.text = generatorScript.score.ToString(); // Equalize text to the score(string).
 
-        if (player.position.y <= 0)  // If statement for when player coordinate under the 0. (At the beginning)
-        {
-            scoreText.text = "0";
-        }
     }
+
+
+
 }

@@ -24,7 +24,7 @@ public class Generator : MonoBehaviour
         {
             num += 3;                   // Add 3 more spawn number.
             GeneratorGeneral();         // Run Platform Generator.(line34)
-            GameObject.Find("Platform_Basic(Clone)").GetComponent<BoxCollider2D>().enabled = true; 
+            GameObject.Find("Platform_Basic").GetComponent<BoxCollider2D>().enabled = true; 
             // Colliders are turned off in the counter.cs file to increase the score 1 point each time. It opens again here.
         }
     }
