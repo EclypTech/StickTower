@@ -2333,7 +2333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4463777796694882776, guid: 241e6617afdd6a543b9c02508c5f9732, type: 3}
       propertyPath: m_Size.x
-      value: 5.725343
+      value: 5.742383
       objectReference: {fileID: 0}
     - target: {fileID: 4463777796694882776, guid: 241e6617afdd6a543b9c02508c5f9732, type: 3}
       propertyPath: m_Size.y
@@ -2341,7 +2341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4463777796694882776, guid: 241e6617afdd6a543b9c02508c5f9732, type: 3}
       propertyPath: m_Offset.x
-      value: -0.005482912
+      value: 0.04729128
       objectReference: {fileID: 0}
     - target: {fileID: 4463777796694882776, guid: 241e6617afdd6a543b9c02508c5f9732, type: 3}
       propertyPath: m_Offset.y
@@ -3591,8 +3591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adde59c6ed88888459eb6de2ff02c8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpspeed: 9
+  speed: 6
+  jumpspeed: 10
   jump: 1
   groundcheck: {fileID: 1721411708}
   checkRadius: 0.1
