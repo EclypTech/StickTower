@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MyScript : MonoBehaviour
 { 
+    // Player movement part.
     protected Joystick joystick;
     protected JoyButton joybutton;
     public int speed;
