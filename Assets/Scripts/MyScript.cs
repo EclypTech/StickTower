@@ -14,10 +14,20 @@ public class MyScript : MonoBehaviour
     public float checkRadius;
     public LayerMask whatisGround;
 
+
+    //Stamina bar part.
+    public int maxStamina = 100;
+    public int currentStamina;
+    public StaminaBar staminaBar;
+
+
     void Start()
     {
         joystick = FindObjectOfType<Joystick>();    // Call Joystick button function from JoyButton.cs
         joybutton = FindObjectOfType<JoyButton>();  // Call Joybutton button function from JoyButton.cs
+
+        currentStamina = maxStamina;              //Max stamina equal to 100.
+        staminaBar.SetMaxStamina(maxStamina);     //Stamina equal to max stamina at the beggining of game.
     }
 
     void FixedUpdate()
