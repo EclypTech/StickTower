@@ -10,13 +10,19 @@ public class PlatformJumper : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        if(collision.relativeVelocity.y <= 0f)
         {
-            Vector2 velocity = rb.velocity;
-            velocity.y = jumpForce;
-            rb.velocity = velocity;
+            Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                Vector2 velocity = rb.velocity;
+                velocity.y = jumpForce;
+                rb.velocity = velocity;
+            }
         }
+
+
+        
     }
 
 
