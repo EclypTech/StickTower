@@ -20,19 +20,12 @@ public class PlatformJumper : MonoBehaviour
                 rb.velocity = velocity;
             }
         }
-
-
-        
     }
-
-
 
     void Start()
     {
         
     }
-
-
 
     void Update()
     {
