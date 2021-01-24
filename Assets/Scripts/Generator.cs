@@ -63,9 +63,9 @@ public class Generator : MonoBehaviour
             if (spawnPosition.y == OpalRange)   // If Platform spawn position equal to stamina range...
             {
                 OpalRange += 93;                                                  // Increase stamina spawn position.
-                spawnPosition.y += 0.6f;                                         // Stamina spawn under the current platform.
-                Instantiate(OpalPrefab, spawnPosition, Quaternion.identity);     // Spawn staminaprefab.
-                spawnPosition.y -= 0.6f;                                         // Increase position again for current platform.
+                spawnPosition.y += 0.6f;                                          // Stamina spawn under the current platform.
+                Instantiate(OpalPrefab, spawnPosition, Quaternion.identity);      // Spawn staminaprefab.
+                spawnPosition.y -= 0.6f;                                          // Increase position again for current platform.
             }
 
 
