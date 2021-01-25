@@ -46,14 +46,20 @@ public class Generator : MonoBehaviour
 
 
 
+
+
         for (int i = 0; i < numberOfPlatforms+10; i++)  // Loop for create platforms take as basis numberOfPlatforms.
         {
-            spawnPosition.y += Random.Range(minY, maxY);                         // Define random vertical position between minY and maxY.
-            spawnPosition.x = Random.Range(-levelWidth, levelWidth);             // Define random horizontal position between max and min level width.
-            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);     // Spawn platformPrefab take as basis spawn position.
-            ye.y = spawnPosition.y;                                              // Update spawn points for next spawns to referance these points.
 
-            if( spawnPosition.y == staminaRange)   // If Platform spawn position equal to stamina range...
+            spawnPosition.y += Random.Range(minY, maxY);                             // Define random vertical position between minY and maxY.
+            spawnPosition.x = Random.Range(-levelWidth, levelWidth);                 // Define random horizontal position between max and min level width.
+            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);         // Spawn platformPrefab take as basis spawn position.
+            ye.y = spawnPosition.y;                                                  // Update spawn points for next spawns to referance these points.
+
+
+
+
+            if ( spawnPosition.y == staminaRange)   // If Platform spawn position equal to stamina range...
             {
                 staminaRange += 18;                                                 // Increase stamina spawn position.
                 spawnPosition.y += 0.6f;                                            // Stamina spawn under the current platform.
