@@ -4,12 +4,12 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
     public GameObject platformPrefab;   // Define our game object platform prefab now.
-    public int numberOfPlatforms = 5;   // Number of spawn platform component.
+    public int numberOfPlatforms = 10;   // Number of spawn platform component.
     public float levelWidth = 2.5f;     // Horizontal Range. 
     public float minY = 1.3f;           // Lower limit of Y.
     public float maxY = 1.3f;           // Upper limit of Y.
     public Vector3 ye = new Vector3();  // New vector that records the spawn coordinate.
-    public int num = 5;                 // Num = 3 for limit of the spawn number.
+    public int num = 10;                 // Num = 3 for limit of the spawn number.
     public int score = 0;               // Score = 0 which means number of climbed platforms.
     public int OpalNum = 0;
 
@@ -31,7 +31,7 @@ public class Generator : MonoBehaviour
     {
         if (score == num)               // If score equal to limit of the spawn number..
         {
-            num += 5;                   // Add 3 more spawn number.
+            num += 10;                   // Add 3 more spawn number.
             GeneratorGeneral();         // Run Platform Generator.(line34)
             GameObject.Find("Platform_Basic").GetComponent<BoxCollider2D>().enabled = true; 
             // Colliders are turned off in the counter.cs file to increase the score 1 point each time. It opens again here.
@@ -46,7 +46,7 @@ public class Generator : MonoBehaviour
 
 
 
-        for (int i = 0; i < numberOfPlatforms; i++)  // Loop for create platforms take as basis numberOfPlatforms.
+        for (int i = 0; i < numberOfPlatforms+10; i++)  // Loop for create platforms take as basis numberOfPlatforms.
         {
             spawnPosition.y += Random.Range(minY, maxY);                         // Define random vertical position between minY and maxY.
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);             // Define random horizontal position between max and min level width.

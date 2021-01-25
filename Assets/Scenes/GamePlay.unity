@@ -3809,12 +3809,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 3411783563400444268, guid: 241e6617afdd6a543b9c02508c5f9732, type: 3}
-  numberOfPlatforms: 5
+  numberOfPlatforms: 10
   levelWidth: 2.5
   minY: 1.5
   maxY: 1.5
   ye: {x: 0, y: 0, z: 0}
-  num: 5
+  num: 10
   score: 0
   OpalNum: 0
   StaminaPrefab: {fileID: 1528043997843026726, guid: 13363314ba9034348b0d369493803ffb, type: 3}
