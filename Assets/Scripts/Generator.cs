@@ -11,6 +11,7 @@ public class Generator : MonoBehaviour
     public Vector3 ye = new Vector3();  // New vector that records the spawn coordinate.
     public int num = 5;                 // Num = 3 for limit of the spawn number.
     public int score = 0;               // Score = 0 which means number of climbed platforms.
+    public int OpalNum = 0;
 
 
     public GameObject StaminaPrefab;    // Define StaminaPrefab to the script. 

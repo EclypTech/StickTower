@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4462224792214725853}
   - component: {fileID: 4462224792214725854}
   - component: {fileID: 4462224792214725851}
+  - component: {fileID: 1780899683440956893}
   m_Layer: 0
   m_Name: OpalPrefab
   m_TagString: Untagged
@@ -119,3 +120,15 @@ CircleCollider2D:
   m_Offset: {x: 0.00000057287076, y: 0}
   serializedVersion: 2
   m_Radius: 1.8242294
+--- !u!114 &1780899683440956893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4462224792214725855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 854fb49b0dd417a4b997794f2b37a414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
