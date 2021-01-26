@@ -20,7 +20,7 @@ public class OpalCollector : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             GameObject playerobj = GameObject.Find("Player");
-            Generator opalnum = playerobj.GetComponent<Generator>();
+            OpalGenerator opalnum = playerobj.GetComponent<OpalGenerator>();
             opalnum.OpalNum += 1;
             Destroy(gameObject);
         }

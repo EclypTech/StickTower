@@ -16,9 +16,9 @@ public class OpalSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject theplayer = GameObject.Find("Player"); // Find player for get generator script.
-        Generator generatorScript = theplayer.GetComponent<Generator>();  // Find generator for get score data.
+        GameObject playerobj = GameObject.Find("Player");
+        OpalGenerator opalnum = playerobj.GetComponent<OpalGenerator>();
 
-        OpalscoreText.text = generatorScript.OpalNum.ToString(); // Equalize text to the score(string).
+        OpalscoreText.text = opalnum.OpalNum.ToString(); // Equalize text to the score(string).
     }
 }

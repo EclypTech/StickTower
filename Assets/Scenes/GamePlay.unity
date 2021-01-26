@@ -595,6 +595,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4462224792214725852, guid: 78ddb14e1d7b15c4dbe22b957af4987f, type: 3}
   m_PrefabInstance: {fileID: 192348840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &256461243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1528043997843026726, guid: 13363314ba9034348b0d369493803ffb, type: 3}
+  m_PrefabInstance: {fileID: 439174081}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &259223401
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,6 +3607,8 @@ GameObject:
   - component: {fileID: 2118998389}
   - component: {fileID: 2118998390}
   - component: {fileID: 2118998385}
+  - component: {fileID: 2118998391}
+  - component: {fileID: 2118998392}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3799,18 +3806,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 3411783563400444268, guid: 241e6617afdd6a543b9c02508c5f9732, type: 3}
-  numberOfPlatforms: 10
-  levelWidth: 2.5
-  minY: 1.5
-  maxY: 1.5
-  ye: {x: 0, y: 0, z: 0}
+  rangeX: 2.5
+  rangeY: 1.5
   num: 10
   score: 0
-  OpalNum: 0
-  StaminaPrefab: {fileID: 1528043997843026726, guid: 13363314ba9034348b0d369493803ffb, type: 3}
-  staminaRange: 18
-  OpalPrefab: {fileID: 1571959370}
-  OpalRange: 93
+  spawnPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2118998389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3837,6 +3837,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 6
+--- !u!114 &2118998391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118998380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7698242f0bda241a3ec04ad407ad21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StaminaPrefab: {fileID: 256461243}
+  staminaRange: 18
+--- !u!114 &2118998392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118998380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f491228c4c8f1418e7f46c7bb215e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OpalPrefab: {fileID: 1571959370}
+  OpalRange: 93
+  OpalNum: 0
 --- !u!1 &2126384348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4143,11 +4172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7704474825079366299, guid: 5b5b8a42eee2cf34797616d7dbced05c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9998271
+      value: -3.94
       objectReference: {fileID: 0}
     - target: {fileID: 7704474825079366299, guid: 5b5b8a42eee2cf34797616d7dbced05c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: -5.757
       objectReference: {fileID: 0}
     - target: {fileID: 7704474825079366299, guid: 5b5b8a42eee2cf34797616d7dbced05c, type: 3}
       propertyPath: m_LocalPosition.z
