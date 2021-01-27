@@ -13,7 +13,7 @@ public class Generator : MonoBehaviour
 
     void Start()                        // When start..
     {
-        for(int i = 0 ;i < 10 ; i++)
+        for(int i = 0 ;i < 6 ; i++)
         {
             GeneratorGeneral();         // Run Platform Generator at the beginning.(line34)
         }

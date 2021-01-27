@@ -3850,7 +3850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StaminaPrefab: {fileID: 256461243}
-  staminaRange: 18
+  staminaRange: 12
 --- !u!114 &2118998392
 MonoBehaviour:
   m_ObjectHideFlags: 0
