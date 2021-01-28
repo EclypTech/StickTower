@@ -26,15 +26,10 @@ public class Generator : MonoBehaviour
     {
         if (score+10 == num)            // If score equal to limit of the spawn number..
         {
-            if(score == 20 && num == 30)
-            {
-                rangeY += 0.5f;
-            }
-
-            if (score == 30 && num == 40)
-            {
-                rangeY += 0.5f;
-            }
+            //if(score == 20 && num == 30)
+            //{
+            //    rangeY += 0.5f;
+            //}
 
 
             num += 1;                   // Add 3 more spawn number.
