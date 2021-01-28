@@ -13,7 +13,9 @@ public class Generator : MonoBehaviour
 
     void Start()                        // When start..
     {
-        for(int i = 0 ;i < 6 ; i++)
+        spawnPosition.y = -3;
+
+        for(int i = 0 ;i < 10 ; i++)
         {
             GeneratorGeneral();         // Run Platform Generator at the beginning.(line34)
         }
@@ -24,6 +26,17 @@ public class Generator : MonoBehaviour
     {
         if (score+10 == num)            // If score equal to limit of the spawn number..
         {
+            if(score == 20 && num == 30)
+            {
+                rangeY += 0.5f;
+            }
+
+            if (score == 30 && num == 40)
+            {
+                rangeY += 0.5f;
+            }
+
+
             num += 1;                   // Add 3 more spawn number.
             GeneratorGeneral();         // Run Platform Generator.(line34)
             GameObject.Find("Platform_Basic").GetComponent<BoxCollider2D>().enabled = true; 
