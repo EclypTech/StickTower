@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7671795469888719022}
   - component: {fileID: 7671795469888719019}
   - component: {fileID: 3831384852700435061}
-  - component: {fileID: 802607492085057463}
+  - component: {fileID: 6818936079830428291}
   m_Layer: 6
   m_Name: Platform_Basic
   m_TagString: platform
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 12
---- !u!114 &802607492085057463
+--- !u!114 &6818936079830428291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
