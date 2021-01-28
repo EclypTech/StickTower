@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class StaminaGenerator : MonoBehaviour
 {
-    public GameObject StaminaPrefab;    // Define StaminaPrefab to the script. 
-    public float staminaRange = 12;        // Stamina generate range. Must be a multiple of 3
+    public GameObject StaminaPrefab;
+    public Vector3 StamVec = new Vector3();
+    public float rangeX = 3;
+    public float rangeY = 12;
+    public float controlnum = 0;
 
     void Start()
     {
-        GameObject findplayer = GameObject.Find("Player");
-        Generator findgenerator = findplayer.GetComponent<Generator>();
 
-        if (findgenerator.spawnPosition.y == staminaRange)   // If Platform spawn position equal to stamina range...
-        {
-            staminaRange += findgenerator.rangeY * 6;                                                 // Increase stamina spawn position.
-            findgenerator.spawnPosition.y += 0.6f;                                            // Stamina spawn under the current platform.
-            Instantiate(StaminaPrefab, findgenerator.spawnPosition, Quaternion.identity);     // Spawn staminaprefab.
-            findgenerator.spawnPosition.y -= 0.6f;                                            // Increase position again for current platform.
-        }
     }
 
 
@@ -27,17 +21,18 @@ public class StaminaGenerator : MonoBehaviour
         GameObject findplayer = GameObject.Find("Player");
         Generator findgenerator = findplayer.GetComponent<Generator>();
 
-        if (findgenerator.spawnPosition.y == staminaRange)   // If Platform spawn position equal to stamina range...
+        if (findgenerator.score == controlnum)
         {
-            staminaRange += findgenerator.rangeY * 6;                                                 // Increase stamina spawn position.
-            findgenerator.spawnPosition.y += 0.6f;                                            // Stamina spawn under the current platform.
-            Instantiate(StaminaPrefab, findgenerator.spawnPosition, Quaternion.identity);     // Spawn staminaprefab.
-            findgenerator.spawnPosition.y -= 0.6f;                                            // Increase position again for current platform.
+            controlnum += 3;
+            SpawnStamina();
         }
-
-
-
-
     }
 
+    public void SpawnStamina()
+    {
+        GameObject findcam = GameObject.Find("Main Camera");
+        StamVec.y = Random.Range(findcam.transform.position.y + rangeY, findcam.transform.position.y + rangeY);
+        StamVec.x = Random.Range(-rangeX, rangeX);
+        Instantiate(StaminaPrefab, StamVec, Quaternion.identity);
+    }
 }
