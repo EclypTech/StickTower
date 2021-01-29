@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovedGenerator : MonoBehaviour
-{
+public class MovedGenerator : MonoBehaviour{
     public GameObject PlatformMoved;
     public float PosX = 0;
     public Vector3 MovedCoord = new Vector3();

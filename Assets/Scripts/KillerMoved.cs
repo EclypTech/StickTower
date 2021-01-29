@@ -7,6 +7,7 @@ public class KillerMoved : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("1");
         
     }
 
@@ -18,9 +19,11 @@ public class KillerMoved : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)  // When touch..
     {
-        if (collision.transform.tag == "MovPlat")
+        Debug.Log("2");
+        if(collision.transform.tag == "MovPlat")
         {
-            //Destroy(gameObject);
+            Debug.Log("3");
+            Destroy(gameObject);
         }
     }
 }
