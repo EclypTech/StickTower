@@ -9,6 +9,10 @@ public class MovedGenerator : MonoBehaviour
     public Vector3 MovedCoord = new Vector3();
     public float CountNum = 12;
 
+
+    public GameObject findplayer;
+    public Generator findgenerator;
+
     void Start()
     {
 
@@ -16,9 +20,9 @@ public class MovedGenerator : MonoBehaviour
 
     void Update()
     {
-        GameObject findplayer = GameObject.Find("Player");
-        Generator findgenerator = findplayer.GetComponent<Generator>();
 
+        findplayer = GameObject.Find("Player");
+        findgenerator = findplayer.GetComponent<Generator>();
 
         if (findgenerator.spawnPosition.y == CountNum)
         {
@@ -29,8 +33,8 @@ public class MovedGenerator : MonoBehaviour
 
     public void MovedSPawner()
     {
-        GameObject findplayer = GameObject.Find("Player");
-        Generator findgenerator = findplayer.GetComponent<Generator>();
+        //findplayer = GameObject.Find("Player");
+        //findgenerator = findplayer.GetComponent<Generator>();
 
         MovedCoord.y = findgenerator.spawnPosition.y;
         MovedCoord.x = PosX;

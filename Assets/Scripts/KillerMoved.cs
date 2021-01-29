@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Killermoved : MonoBehaviour
+public class KillerMoved : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class Killermoved : MonoBehaviour
     {
         if (collision.transform.tag == "MovPlat")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
