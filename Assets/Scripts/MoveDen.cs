@@ -15,10 +15,10 @@ public class MoveDen : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        left.x = gameObject.transform.position.x - 2.5f;
+        left.x = -2.5f;
         left.y = gameObject.transform.position.y;
 
-        right.x = gameObject.transform.position.x + 2.5f;
+        right.x = 2.5f;
         right.y = gameObject.transform.position.y;
 
         nextPos = left;

@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 821225213412834045}
   m_Layer: 6
   m_Name: MovingDeneme
-  m_TagString: MovPlat
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
