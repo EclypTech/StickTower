@@ -22,7 +22,7 @@ public class StaminaCollector : MonoBehaviour
         {
             GameObject bar = GameObject.Find("StaminaBar");
             StaminaBar staminaScript = bar.GetComponent<StaminaBar>();
-            staminaScript.slider.value += 33;
+            staminaScript.slider.value += 25;
             Destroy(gameObject);
         }
     }

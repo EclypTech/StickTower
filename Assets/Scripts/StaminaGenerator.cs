@@ -6,7 +6,7 @@ public class StaminaGenerator : MonoBehaviour
 {
     public GameObject StaminaPrefab;
     public Vector3 StamVec = new Vector3();
-    public float rangeX = 3;
+    public float rangeX = 2.5f;
     public float rangeY = 12;
     public float controlnum = 0;
 

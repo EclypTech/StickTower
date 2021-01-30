@@ -26,7 +26,7 @@ public class StaminaBar : MonoBehaviour
 
     void Update()
     {
-        slider.value -= Time.deltaTime*4; // Stamina increasing 5 value in a second.
+        slider.value -= Time.deltaTime*5; // Stamina increasing 5 value in a second.
 
         if(slider.value <= 0)  // If stamina equal to 0
         {

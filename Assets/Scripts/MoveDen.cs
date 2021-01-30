@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveDen : MonoBehaviour
 {
     public GameObject MovedPlat;
-    public float speed;
+    public float speed = 2;
     public Vector3 left = new Vector3();
     public Vector3 right = new Vector3();
     Vector3 nextPos;
@@ -27,11 +27,22 @@ public class MoveDen : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        GameObject plyr = GameObject.Find("Player");
+        Generator gnrtr = plyr.GetComponent<Generator>();
+
         if (transform.position == left)
             nextPos = right;
 
         if (transform.position == right)
             nextPos = left;
+        if (gnrtr.score == 80)
+            speed = 2.5f ;
+        if (gnrtr.score == 100)
+            speed = 3.0f;
+        if (gnrtr.score == 120)
+            speed = 3.5f;
+        if (gnrtr.score == 150)
+            speed = 5;
 
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
     }

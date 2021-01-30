@@ -4520,6 +4520,7 @@ MonoBehaviour:
   num: 10
   score: 0
   spawnPosition: {x: 0, y: 0, z: 0}
+  movNum: 20
 --- !u!114 &2118998389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4560,7 +4561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StaminaPrefab: {fileID: 256461243}
   StamVec: {x: 0, y: 0, z: 0}
-  rangeX: 3
+  rangeX: 2.5
   rangeY: 12
   controlnum: 0
 --- !u!114 &2118998392
@@ -4576,7 +4577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpalPrefab: {fileID: 1571959370}
-  OpalRange: 93
+  OpalRange: 75
   OpalNum: 0
 --- !u!1 &2126384348
 GameObject:
