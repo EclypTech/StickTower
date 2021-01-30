@@ -19,6 +19,7 @@ public class KillerMoved : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)  // When touch..
     {
+        //amk
         Debug.Log("2");
         if(collision.transform.tag == "MovPlat")
         {
