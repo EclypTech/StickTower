@@ -13,6 +13,7 @@ public class Generator : MonoBehaviour
 
     void Start()                        // When start..
     {
+        platformPrefab.GetComponent<MoveDen>().enabled = true;
         spawnPosition.y = -3;
 
         for(int i = 0 ;i < 10 ; i++)
@@ -26,16 +27,10 @@ public class Generator : MonoBehaviour
     {
         if (score+10 == num)            // If score equal to limit of the spawn number..
         {
-            //if(score == 20 && num == 30)
-            //{
-            //    rangeY += 0.5f;
-            //}
-
-
+            platformPrefab.GetComponent<MoveDen>().enabled = false;
             num += 1;                   // Add 3 more spawn number.
             GeneratorGeneral();         // Run Platform Generator.(line34)
-            GameObject.Find("Platform_Basic").GetComponent<BoxCollider2D>().enabled = true; 
-            // Colliders are turned off in the counter.cs file to increase the score 1 point each time. It opens again here.
+
         }
     }
 
