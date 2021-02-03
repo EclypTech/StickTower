@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class OpalCollector : MonoBehaviour
 {
+    private int opalCount; // Variable created for total opal number.
     // Start is called before the first frame update
     void Start()
     {
-        
+        opalCount = PlayerPrefs.GetInt("totalOpal"); // Total opal calling from prefs.
     }
 
     // Update is called once per frame
@@ -22,6 +23,8 @@ public class OpalCollector : MonoBehaviour
             GameObject playerobj = GameObject.Find("Player");
             OpalGenerator opalnum = playerobj.GetComponent<OpalGenerator>();
             opalnum.OpalNum += 1;
+            opalCount += 1; // added score to total opal number.
+            PlayerPrefs.SetInt("totalOpal", opalCount);// adding the new total number to prefs.
             Destroy(gameObject);
         }
     }

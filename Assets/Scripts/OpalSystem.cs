@@ -19,6 +19,7 @@ public class OpalSystem : MonoBehaviour
         GameObject playerobj = GameObject.Find("Player");
         OpalGenerator opalnum = playerobj.GetComponent<OpalGenerator>();
 
-        OpalscoreText.text = opalnum.OpalNum.ToString(); // Equalize text to the score(string).
+        OpalscoreText.text = opalnum.OpalNum.ToString();// Equalize text to the score(string).
+        //PlayerPrefs.SetInt("totalOpal", opalnum.OpalNum);
     }
 }

@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    public EnergyBar energyBar;
+    /*public EnergyBar energyBar;
+
     public int maxEnergy = 25;
+
     public int currentEnergy;
+
     public int worked;
+
     public int changeSceneTo = 1;
+
     public GameObject VideoPanel;
 
 
@@ -69,9 +74,10 @@ public class MainMenuController : MonoBehaviour
 
         currentEnergy += 5;
         energyBar.SetEnergy(currentEnergy);
+        SetCurrentEnergy();
         VideoPanel.SetActive(false);
 
-    }
+    }*/
 
     
 
