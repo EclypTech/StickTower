@@ -594,6 +594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseCanvas: {fileID: 1256820245}
   JoystickCanvas: {fileID: 956769692}
+  sceneId: 0
 --- !u!1001 &192348840
 PrefabInstance:
   m_ObjectHideFlags: 0

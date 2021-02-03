@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false; 
     public GameObject PauseCanvas; // Define game object which means canvaspause.(PauseMenu)
     public GameObject JoystickCanvas; // Define Game Object which is closing.(GameCanvas)
+    public int sceneId = 0;
 
     void Update()
     {
@@ -34,7 +35,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;  // Solve freeze in the main menu. Time flies.
         Debug.Log("Loading menu...");
-        // SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(sceneId);
         // We use upper command when we create main manu scene.
     }
 
