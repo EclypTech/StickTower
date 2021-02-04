@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestroyPlayer : MonoBehaviour
 {
     public GameObject PlatformDestroyerPoint;  // Define Game object.
+    public GameObject GameOverCanvas;
 
 
     void Start()
@@ -19,7 +20,9 @@ public class DestroyPlayer : MonoBehaviour
         // If player has a lower vertical value from the lower limit of camera..
         {
             Destroy(gameObject); // Destroy player.
+            GameOverCanvas.SetActive(true);
         }
 
     }
+
 }
