@@ -13,7 +13,7 @@ public class PlatformJumper : MonoBehaviour
         if(collision.relativeVelocity.y <= 0f)  // If statement to block infinite jump.
         {
             Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>(); // Determine which colliders touch.
-            if (rb != null)  // If touch..
+            if (collision.transform.tag == "Player")  // If touch..
             {
                 Vector2 velocity = rb.velocity;  // Determine vector velocity for Rigidbody.
                 velocity.y = jumpForce;  // Add vertical force to velocity.
