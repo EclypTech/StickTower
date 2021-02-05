@@ -1627,6 +1627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 454875139}
   - component: {fileID: 454875138}
+  - component: {fileID: 454875140}
   m_Layer: 0
   m_Name: bg_rock_2
   m_TagString: Untagged
@@ -1699,6 +1700,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &454875140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454875137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5c31b8f049155488a2bc7dfe7014c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyerPoint: {fileID: 0}
 --- !u!1 &471738488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,6 +2754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863370459}
   - component: {fileID: 863370458}
+  - component: {fileID: 863370460}
   m_Layer: 0
   m_Name: scallop_fossil
   m_TagString: Untagged
@@ -2812,6 +2827,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &863370460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863370457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5c31b8f049155488a2bc7dfe7014c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyerPoint: {fileID: 0}
 --- !u!1 &947995407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3424,7 +3452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035578887}
   m_Layer: 0
-  m_Name: PlatformDestroyerPoint
+  m_Name: DestroyerPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3885,6 +3913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207685584}
   - component: {fileID: 1207685583}
+  - component: {fileID: 1207685585}
   m_Layer: 0
   m_Name: shell_fossil
   m_TagString: Untagged
@@ -3957,6 +3986,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207685585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207685582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5c31b8f049155488a2bc7dfe7014c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyerPoint: {fileID: 0}
 --- !u!1 &1222241998
 GameObject:
   m_ObjectHideFlags: 0
@@ -5401,6 +5443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1682395613}
   - component: {fileID: 1682395612}
+  - component: {fileID: 1682395614}
   m_Layer: 0
   m_Name: bg_rock_3
   m_TagString: Untagged
@@ -5473,6 +5516,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682395614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682395611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5c31b8f049155488a2bc7dfe7014c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyerPoint: {fileID: 0}
 --- !u!1 &1721411707
 GameObject:
   m_ObjectHideFlags: 0
@@ -5750,6 +5806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753870142}
   - component: {fileID: 1753870141}
+  - component: {fileID: 1753870143}
   m_Layer: 0
   m_Name: bg_rock_1
   m_TagString: Untagged
@@ -5822,6 +5879,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1753870143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753870140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5c31b8f049155488a2bc7dfe7014c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyerPoint: {fileID: 0}
 --- !u!1 &1789541476
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,6 +6078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837290123}
   - component: {fileID: 1837290122}
+  - component: {fileID: 1837290124}
   m_Layer: 0
   m_Name: fish_fossil
   m_TagString: Untagged
@@ -6080,6 +6151,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.702}
+--- !u!114 &1837290124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837290121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5c31b8f049155488a2bc7dfe7014c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyerPoint: {fileID: 0}
 --- !u!1 &1895169364
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,6 +6346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1920291313}
   - component: {fileID: 1920291312}
+  - component: {fileID: 1920291314}
   m_Layer: 0
   m_Name: moss_1
   m_TagString: Untagged
@@ -6334,6 +6419,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1920291314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920291311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5c31b8f049155488a2bc7dfe7014c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyerPoint: {fileID: 0}
 --- !u!4 &2041454542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8820276157842305164, guid: 3186feb011c4d5941b60bc42500ea748, type: 3}
@@ -6632,7 +6730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d36bc9622f68f94d85a90c94661641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlatformDestroyerPoint: {fileID: 1035578886}
+  DestroyerPoint: {fileID: 0}
   GameOverCanvas: {fileID: 106529649}
 --- !u!114 &2118998390
 MonoBehaviour:

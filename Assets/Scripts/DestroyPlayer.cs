@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class DestroyPlayer : MonoBehaviour
 {
-    public GameObject PlatformDestroyerPoint;  // Define Game object.
+    public GameObject DestroyerPoint;  // Define Game object.
     public GameObject GameOverCanvas;
 
 
     void Start()
     {
-        PlatformDestroyerPoint = GameObject.Find("PlatformDestroyerPoint");
+        DestroyerPoint = GameObject.Find("DestroyerPoint");
         //When game start, find destroyer point which means tracking lower from the camera.
     }
 
     void Update()
     {
-        if (transform.position.y < PlatformDestroyerPoint.transform.position.y)
+        if (transform.position.y < DestroyerPoint.transform.position.y)
         // If player has a lower vertical value from the lower limit of camera..
         {
             Destroy(gameObject); // Destroy player.

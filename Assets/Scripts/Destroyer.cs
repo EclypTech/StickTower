@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformDestroyerScript : MonoBehaviour
+public class Destroyer : MonoBehaviour
 {
-    public GameObject PlatformDestroyerPoint; // Define Game object.
+    public GameObject DestroyerPoint; // Define Game object.
 
     void Start()
     {
-        PlatformDestroyerPoint = GameObject.Find("PlatformDestroyerPoint"); 
+        DestroyerPoint = GameObject.Find("DestroyerPoint"); 
         //When game start, find destroyer point which means tracking lower from the camera.
     }
 
     void Update()
     {
-        if(transform.position.y < PlatformDestroyerPoint.transform.position.y)
+        if(transform.position.y < DestroyerPoint.transform.position.y)
             // If any platform has a lower vertical value from the lower limit of camera..
         {
             Destroy(gameObject); // Destroy the platform.
