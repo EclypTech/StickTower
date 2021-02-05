@@ -19,7 +19,7 @@ public class DestroyPlayer : MonoBehaviour
         if (transform.position.y < DestroyerPoint.transform.position.y)
         // If player has a lower vertical value from the lower limit of camera..
         {
-            Destroy(gameObject); // Destroy player.
+            //Destroy(gameObject); // Destroy player.
             GameOverCanvas.SetActive(true);
         }
 

@@ -4,32 +4,34 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-
-public class SetVolume : MonoBehaviour
+public class SetMusicVolume : MonoBehaviour
 {
-    
     public Slider slider;
     public AudioSource audioSource;
     public float musicSettings;
-    private int musicCheck = 0;
+    public int musicCheck = 0;
 
     private void Start()
     {
-        if(musicCheck == 0){
+        musicCheck = PlayerPrefs.GetInt("musicCheck");
+        if (musicCheck == 0)
+        {
             musicSettings = 1;
+            
             PlayerPrefs.SetInt("musicCheck", 1);
-            SetLevel(musicSettings);
+
+            SetMusicLevel(musicSettings);
             
         }
         else
         {
-            
             musicSettings = PlayerPrefs.GetFloat("musicLevel");
-            SetLevel(musicSettings);
+            
+            SetMusicLevel(musicSettings);  
         }
     }
 
-    public void SetLevel(float sliderValue)
+    public void SetMusicLevel(float sliderValue)
     {
         slider.value = sliderValue;
         audioSource.volume = sliderValue;
@@ -38,8 +40,4 @@ public class SetVolume : MonoBehaviour
 
     }
 
-
-
-
 }
-    
