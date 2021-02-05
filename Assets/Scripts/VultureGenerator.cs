@@ -8,7 +8,7 @@ public class VultureGenerator : MonoBehaviour
     public Vector3 VultureVec = new Vector3();
     public float ranX = 2.5f;
     public float ranY = 10;
-    public float cnum = 20;
+    public float cnum = 50;
 
     void Start()
     {
@@ -23,11 +23,11 @@ public class VultureGenerator : MonoBehaviour
         if (findgenerator.score == cnum)
         {
             cnum += 20;
-            SpawnStamina();
+            SpawnVulture();
         }
     }
 
-    public void SpawnStamina()
+    public void SpawnVulture()
     {
         GameObject findcam = GameObject.Find("Main Camera");
         VultureVec.y = Random.Range(findcam.transform.position.y + ranY, findcam.transform.position.y + ranY);
