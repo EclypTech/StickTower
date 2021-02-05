@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class VultureGenerator : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject VulturePrefab;
+    public Vector3 VultureVec = new Vector3();
+    public float ranX = 2.5f;
+    public float ranY = 10;
+    public float cnum = 20;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        GameObject findplayer = GameObject.Find("Player");
+        Generator findgenerator = findplayer.GetComponent<Generator>();
+
+        if (findgenerator.score == cnum)
+        {
+            cnum += 20;
+            SpawnStamina();
+        }
+    }
+
+    public void SpawnStamina()
+    {
+        GameObject findcam = GameObject.Find("Main Camera");
+        VultureVec.y = Random.Range(findcam.transform.position.y + ranY, findcam.transform.position.y + ranY);
+        VultureVec.x = Random.Range(-ranX, ranX);
+        Instantiate(VulturePrefab, VultureVec, Quaternion.identity);
     }
 }

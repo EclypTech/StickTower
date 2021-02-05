@@ -6526,6 +6526,7 @@ GameObject:
   - component: {fileID: 2118998391}
   - component: {fileID: 2118998392}
   - component: {fileID: 2118998393}
+  - component: {fileID: 2118998394}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6814,6 +6815,23 @@ MonoBehaviour:
   - {fileID: 454875137}
   - {fileID: 1207685582}
   - {fileID: 863370457}
+--- !u!114 &2118998394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118998380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5323908b5b5e34b9f844450fb74fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VulturePrefab: {fileID: 564243412}
+  VultureVec: {x: 0, y: 0, z: 0}
+  ranX: 2.5
+  ranY: 10
+  cnum: 20
 --- !u!1 &2126384348
 GameObject:
   m_ObjectHideFlags: 0
