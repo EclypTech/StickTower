@@ -23,7 +23,7 @@ public class OpalGenerator : MonoBehaviour
 
         if (findgenerator.score == contnum)
         {
-            contnum += 9;
+            contnum += 10;
             SpawnStamina();
         }
     }
