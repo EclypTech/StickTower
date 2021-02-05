@@ -35,13 +35,13 @@ public class MoveDen : MonoBehaviour
 
         if (transform.position == right)
             nextPos = left;
-        if (gnrtr.score == 80)
+        if (gnrtr.score >= 80 && gnrtr.score < 100)
             speed = 2.5f ;
-        if (gnrtr.score == 100)
+        if (gnrtr.score >= 100 && gnrtr.score < 120)
             speed = 3.0f;
-        if (gnrtr.score == 120)
+        if (gnrtr.score >= 120 && gnrtr.score < 150)
             speed = 3.5f;
-        if (gnrtr.score == 150)
+        if (gnrtr.score >= 150)
             speed = 5;
 
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
