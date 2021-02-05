@@ -3250,7 +3250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textEnergy: {fileID: 1456852831}
   textTimer: {fileID: 1007960736}
-  restoreDuration: 5
+  restoreDuration: 10
   energyBar: {fileID: 1072363475}
   maxEnergy: 25
   currentEnergy: 0
