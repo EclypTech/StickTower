@@ -12,6 +12,7 @@ public class LevelManag : MonoBehaviour
     public LevelBar levelBar;
     public int xp;
     public int maxXp = 500;
+
     void Start()
     {
         if (PlayerPrefs.GetInt("maxXp") >= maxXp)

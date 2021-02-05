@@ -7,8 +7,8 @@ public class GameOver : MonoBehaviour
 {
     public OpalSystem opalSystem;
     public XPsystem xpSystem;
-    public string newScore;
-    public string newOpalScore;
+    public int newScore;
+    public int newOpalScore;
     public int newHighScore;
 
     public Text newScoreText;
@@ -17,23 +17,25 @@ public class GameOver : MonoBehaviour
     public Text xpText;
     public Text alertText;
     public int totalXp;
+    public int highScore = 0;
 
     
     void Start()
     {
         Time.timeScale = 0f;
         GetScores();
-
-        if (int.Parse(newScore) > int.Parse(PlayerPrefs.GetString("highScore")))
+        
+        
+        if (newScore > highScore )
         {
-            newHighScoreText.text = newScore;
-            PlayerPrefs.SetString("highScore", newScore);
+            newHighScoreText.text = newScore.ToString();
+            PlayerPrefs.SetInt("highScore", newScore);
             PlayerPrefs.Save();
             alertText.gameObject.SetActive(true);
         }
         else
         {
-            newHighScoreText.text = PlayerPrefs.GetString("highScore");
+            newHighScoreText.text = PlayerPrefs.GetInt("highScore").ToString();
             alertText.gameObject.SetActive(false);
         }
         XpCalculator();
@@ -51,16 +53,19 @@ public class GameOver : MonoBehaviour
 
     void GetScores()
     {
-        newScore = xpSystem.scoreText.text;
-        newOpalScore = opalSystem.OpalscoreText.text;
+        newScore = int.Parse(xpSystem.scoreText.text);
+        newOpalScore = int.Parse(opalSystem.OpalscoreText.text);
+        
 
-        newOpalScoreText.text = newOpalScore;
-        newScoreText.text = newScore;
+        newOpalScoreText.text = newOpalScore.ToString();
+        newScoreText.text = newScore.ToString();
+        highScore = PlayerPrefs.GetInt("highScore");
+        
     }
 
 
     void XpCalculator()
     {
-        totalXp = int.Parse(newScore) * 10;   
+        totalXp = newScore * 10;   
     }
 }
