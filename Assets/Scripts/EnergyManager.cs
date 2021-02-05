@@ -44,6 +44,7 @@ public class EnergyManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("currentEnergy", maxEnergy); // On the first opening current energy set to the maximum energy
             PlayerPrefs.SetInt("worked", 1); // After the settings "worked" setting to 1
+            PlayerPrefs.Save();
             currentEnergy = PlayerPrefs.GetInt("currentEnergy"); //current energy calling from prefs for equalizing
         }
         else
