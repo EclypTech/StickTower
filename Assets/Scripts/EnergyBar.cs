@@ -7,7 +7,7 @@ public class EnergyBar : MonoBehaviour
 {
 
     public Slider slider;
-    public MainMenuController mainMenuController;
+    
 
     
 
