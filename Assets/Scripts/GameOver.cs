@@ -28,6 +28,7 @@ public class GameOver : MonoBehaviour
         {
             newHighScoreText.text = newScore;
             PlayerPrefs.SetString("highScore", newScore);
+            PlayerPrefs.Save();
             alertText.gameObject.SetActive(true);
         }
         else
@@ -37,6 +38,7 @@ public class GameOver : MonoBehaviour
         }
         XpCalculator();
         PlayerPrefs.SetInt("xp", totalXp);
+        PlayerPrefs.Save();
         xpText.text = totalXp.ToString();
         
     } 

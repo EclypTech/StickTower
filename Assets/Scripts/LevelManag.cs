@@ -23,6 +23,7 @@ public class LevelManag : MonoBehaviour
         {
             levelBar.SetMaxXp(maxXp);
             PlayerPrefs.SetInt("maxXp", maxXp);
+            PlayerPrefs.Save();
         }
 
         levelBar.SetXp(0);
@@ -32,6 +33,7 @@ public class LevelManag : MonoBehaviour
             neededXp = neededXp - xp;
             PlayerPrefs.SetInt("neededXp", neededXp);
             PlayerPrefs.SetInt("xp", 0);
+            PlayerPrefs.Save();
             levelBar.SetXp(maxXp - neededXp);
 
         }
@@ -69,5 +71,6 @@ public class LevelManag : MonoBehaviour
         PlayerPrefs.SetInt("maxXp", maxXp);
         PlayerPrefs.SetInt("neededXp", neededXp);
         PlayerPrefs.SetInt("playerLevel", playerLevel);
+        PlayerPrefs.Save();
     }
 }
