@@ -6579,7 +6579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpalPrefab: {fileID: 1571959370}
-  OpalRange: 75
+  OpalRange: 30
   OpalNum: 0
 --- !u!1 &2126384348
 GameObject:

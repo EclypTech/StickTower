@@ -4,40 +4,35 @@ using UnityEngine;
 
 public class OpalGenerator : MonoBehaviour
 {
-    public GameObject OpalPrefab;        // Define OpalPrefab to the script.
-    public float OpalRange = 75;           // Opal generate range. Must be a multiple of 3. BUT shouldnt be multiple of Staminarange.
-    public int OpalNum = 0; 
-
+    public int OpalNum = 0;
+    public GameObject OpalPrefab;
+    public Vector3 OpalVec = new Vector3();
+    public float ranX = 2.5f;
+    public float ranY = 12;
+    public float contnum = 0;
 
     void Start()
     {
 
-        GameObject findplayer = GameObject.Find("Player");
-        Generator findgenerator = findplayer.GetComponent<Generator>();
-
-        if (findgenerator.spawnPosition.y == OpalRange)   // If Platform spawn position equal to stamina range...
-        {
-            OpalRange += findgenerator.rangeY * 50;                                                 // Increase stamina spawn position.
-            findgenerator.spawnPosition.y += 0.6f;                                            // Stamina spawn under the current platform.
-            Instantiate(OpalPrefab, findgenerator.spawnPosition, Quaternion.identity);     // Spawn staminaprefab.
-            findgenerator.spawnPosition.y -= 0.6f;                                            // Increase position again for current platform.
-        }
     }
-
 
     void Update()
     {
         GameObject findplayer = GameObject.Find("Player");
         Generator findgenerator = findplayer.GetComponent<Generator>();
 
-
-        if (findgenerator.spawnPosition.y == OpalRange)   // If Platform spawn position equal to stamina range...
+        if (findgenerator.score == contnum)
         {
-            OpalRange += findgenerator.rangeY * 50;                                                                // Increase stamina spawn position.
-            findgenerator.spawnPosition.y += 0.6f;                                          // Stamina spawn under the current platform.
-            Instantiate(OpalPrefab, findgenerator.spawnPosition, Quaternion.identity);      // Spawn staminaprefab.
-            findgenerator.spawnPosition.y -= 0.6f;                                          // Increase position again for current platform.
+            contnum += 9;
+            SpawnStamina();
         }
     }
 
+    public void SpawnStamina()
+    {
+        GameObject findcam = GameObject.Find("Main Camera");
+        OpalVec.y = Random.Range(findcam.transform.position.y + ranY, findcam.transform.position.y + ranY);
+        OpalVec.x = Random.Range(-ranX, ranX);
+        Instantiate(OpalPrefab, OpalVec, Quaternion.identity);
+    }
 }
