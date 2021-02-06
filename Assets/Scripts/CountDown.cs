@@ -21,16 +21,13 @@ public class CountDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("1");
         if(countDown > 0)
         {
             countDown -= Time.unscaledDeltaTime;
             countDownText.text = ((int)countDown).ToString();
-            Debug.Log("2");
         }
         else
         {
-            Debug.Log("3");
             Time.timeScale = 1f;
             GoToMenu(SceneId);
         }
