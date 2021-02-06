@@ -8,10 +8,14 @@ public class PlayerMovement : MonoBehaviour
 	float moveInput;  // To determine direction. Only one ore minus one.
 	Rigidbody2D rb;   // Determine Rigidbody to script.
 
+	Animator animator;
+	public int animcount = 0;
+
 	// Use this for initialization
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();  // Get Rigidbody at the beginning.
+		animator = GetComponent<Animator>();
 	}
 
 
@@ -35,4 +39,31 @@ public class PlayerMovement : MonoBehaviour
 	{
 		moveInput = 0;
 	}
+
+
+	private void OnCollisionEnter2D(Collision2D collision) // Animation Jump.
+	{
+		if (collision.relativeVelocity.y >= 0f) 
+		{
+			Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>(); 
+			if (collision.transform.tag == "platform")  
+			{
+				if(animcount == 0)
+                {
+					animcount = 1;
+					animator.SetTrigger("IsJump1");
+                }
+				else if(animcount == 1)
+                {
+					animcount = 0;
+					animator.SetTrigger("IsJump2");
+				}
+
+
+
+			}
+		}
+	}
+
+
 }

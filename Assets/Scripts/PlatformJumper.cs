@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlatformJumper : MonoBehaviour
 {
-
     // Player jump part.
     public float jumpForce = 10f;  // Determine current force.
 
@@ -24,7 +23,7 @@ public class PlatformJumper : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
