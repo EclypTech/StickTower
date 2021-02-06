@@ -9233,6 +9233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraplingHook
       objectReference: {fileID: 0}
+    - target: {fileID: 4775101039133335149, guid: 1805ccd9b2d2ff8429845f16612e7690, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4775101039133335150, guid: 1805ccd9b2d2ff8429845f16612e7690, type: 3}
       propertyPath: m_RootOrder
       value: 0
