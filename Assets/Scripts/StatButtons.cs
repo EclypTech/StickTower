@@ -14,46 +14,42 @@ public class StatButtons : MonoBehaviour
     public int MoveStarCounter;
     public int StaminaStarCounter;
 
-    GameObject d1 ;
-    GameObject b1 ;
-    GameObject c1 ;
+    GameObject jumpstarobj ;
+    GameObject movestarobj ;
+    GameObject stamstarobj ;
 
-    public string k1;
-    public string si;
-    public string la;
+    public string JumpStr;
+    public string moveStr;
+    public string staminaStr;
 
-    // Start is called before the first frame update
+    GameObject RecyPanel;
+
     void Start()
     {
         Load();
 
         for (int i = 1; i <= StaminaStarCounter; i++)
-        {      
-             la = "t" + i.ToString();
-             c1 = GameObject.Find(la);
-             c1.SetActive(false);
+        {
+             staminaStr = "t" + i.ToString();
+             stamstarobj = GameObject.Find(staminaStr);
+             stamstarobj.SetActive(false);
         }
 
         for (int i = 1; i <= JumpStarCounter; i++)
         {
-            k1 = "s" + i.ToString();
-            d1 = GameObject.Find(k1);
-            d1.SetActive(false);
-
+            JumpStr = "s" + i.ToString();
+            jumpstarobj = GameObject.Find(JumpStr);
+            jumpstarobj.SetActive(false);
         }
 
         for (int i = 1; i <= MoveStarCounter; i++)
         {
-
-            si = "m" + i.ToString();
-            b1 = GameObject.Find(si);
-            b1.SetActive(false);
-
+            moveStr = "m" + i.ToString();
+            movestarobj = GameObject.Find(moveStr);
+            movestarobj.SetActive(false);
         }
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -70,7 +66,6 @@ public class StatButtons : MonoBehaviour
                 StatText.text = levelCounterNum.ToString();
                 JumpLoop();
                 Save();
-
             }
         }
     }
@@ -105,10 +100,9 @@ public class StatButtons : MonoBehaviour
         }
     }
 
-
-    public void Load()
+    public void Load() // silinecek öðe var.
     {
-        PlayerPrefs.SetInt("levelCounterNum",99);
+        PlayerPrefs.SetInt("levelCounterNum",99); // deneme için duruyor.
         levelCounterNum = PlayerPrefs.GetInt("levelCounterNum");
         maxStat = PlayerPrefs.GetInt("maxStat");
         StatText.text = levelCounterNum.ToString();
@@ -116,7 +110,6 @@ public class StatButtons : MonoBehaviour
         JumpStarCounter = PlayerPrefs.GetInt("JumpStarCounter");
         MoveStarCounter = PlayerPrefs.GetInt("MoveStarCounter");
         StaminaStarCounter = PlayerPrefs.GetInt("StaminaStarCounter");
-
     }
 
     public void Save()
@@ -131,17 +124,15 @@ public class StatButtons : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-
     public void JumpLoop()
     {
         for (int i = 1; i <= JumpStarCounter; i++)
         {
-
             if(i == JumpStarCounter)
             {
-                k1 = "s" + i.ToString();
-                d1 = GameObject.Find(k1);
-                d1.SetActive(false);
+                JumpStr = "s" + i.ToString();
+                jumpstarobj = GameObject.Find(JumpStr);
+                jumpstarobj.SetActive(false);
             }
         }
     }
@@ -152,13 +143,12 @@ public class StatButtons : MonoBehaviour
         {
             if (i == MoveStarCounter)
             {
-                si = "m" + i.ToString();
-                b1 = GameObject.Find(si);
-                b1.SetActive(false);
+                moveStr = "m" + i.ToString();
+                movestarobj = GameObject.Find(moveStr);
+                movestarobj.SetActive(false);
             }
         }
     }
-
 
     public void StaminaLoop()
     {
@@ -166,10 +156,23 @@ public class StatButtons : MonoBehaviour
         {
             if (i == StaminaStarCounter)
             {
-                la = "t" + i.ToString();
-                c1 = GameObject.Find(la);
-                c1.SetActive(false);
+                staminaStr = "t" + i.ToString();
+                stamstarobj = GameObject.Find(staminaStr);
+                stamstarobj.SetActive(false);
             }
         }
+    }
+
+    public void RecycleButtonPanel()
+    {
+        RecyPanel = GameObject.Find("RecyclePanel");
+        RecyPanel.SetActive(true);  // Open the pause menu.
+        Time.timeScale = 0f;          // Freeze the time.
+
+    }
+
+    public void RecycleStats()
+    {
+
     }
 }
