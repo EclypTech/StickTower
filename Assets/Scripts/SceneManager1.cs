@@ -10,4 +10,7 @@ public class SceneManager1 : MonoBehaviour
     {
         SceneManager.LoadScene(sceneId);
     }
+
 }
+
+

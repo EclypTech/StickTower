@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Equipment.unity
     guid: ff1f0210a73cece40b959b2bd182c03a
+  - enabled: 1
+    path: Assets/Scenes/CharStats.unity
+    guid: 8034d006a057305478110b8087b042c3
   m_configObjects: {}
