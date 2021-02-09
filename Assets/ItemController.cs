@@ -21,20 +21,32 @@ public class ItemController : MonoBehaviour
     public float maxForce;
     public float minForce;
     public float radius;
+    public float jumpForce;
+
+    
 
     private Vector3 smashedVector3 = new Vector3();
     private Vector2 forceDirection = new Vector2();
+    private Vector2 graplingForce = new Vector2();
+
+    Rigidbody2D rb;
 
 
     void Start()
     {
         itemSelectNum = PlayerPrefs.GetInt("itemnum");
+
         
 
         if(itemSelectNum == 1)
         {
+            Debug.Log("vay amk");
+            rb = GetComponent<Rigidbody2D>();
             GetItem(false, true, false, false);
             TagChanger("enemy", "enemy");
+            graplingForce = new Vector2(0f, jumpForce);
+            InvokeRepeating("GraplingSkill", 10f, 10.0f);
+
         }
         else if(itemSelectNum == 2)
         {
@@ -68,6 +80,14 @@ public class ItemController : MonoBehaviour
     {
         RockPrefab.tag = rock;
         VulturePrefab.tag = vulture;
+
+    }
+
+    void GraplingSkill()
+    {
+
+        rb.velocity = graplingForce;
+        Debug.Log("1");
 
     }
 

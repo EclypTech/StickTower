@@ -6413,6 +6413,7 @@ MonoBehaviour:
   maxForce: 100
   minForce: -100
   radius: 5
+  jumpForce: 20
 --- !u!1 &2126384348
 GameObject:
   m_ObjectHideFlags: 0
