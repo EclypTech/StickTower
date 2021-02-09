@@ -5,29 +5,33 @@ using UnityEngine;
 public class ItemController : MonoBehaviour
 {
     [SerializeField] private GameObject pick;
-    [SerializeField] private GameObject grapling;
+    [SerializeField] private GameObject boots;
     [SerializeField] private GameObject machette;
     [SerializeField] private GameObject helmet;
+    
 
     [SerializeField] private int itemSelectNum;
-    
     [SerializeField] private GameObject RockPrefab;
     [SerializeField] private GameObject SmashedRockPrefab;
 
     [SerializeField] private GameObject VulturePrefab;
 
-    [SerializeField] private GameObject Machette;
+    [SerializeField] private GameObject flame1;
+    [SerializeField] private GameObject flame2;
+
+
 
     public float maxForce;
     public float minForce;
-    public float radius;
+    //public float radius;
     public float jumpForce;
 
     
 
     private Vector3 smashedVector3 = new Vector3();
     private Vector2 forceDirection = new Vector2();
-    private Vector2 graplingForce = new Vector2();
+    private Vector2 bootsForce = new Vector2();
+
 
     Rigidbody2D rb;
 
@@ -40,11 +44,12 @@ public class ItemController : MonoBehaviour
 
         if(itemSelectNum == 1)
         {
-            Debug.Log("vay amk");
-            rb = GetComponent<Rigidbody2D>();
-            GetItem(false, true, false, false);
+            
             TagChanger("enemy", "enemy");
-            graplingForce = new Vector2(0f, jumpForce);
+            rb = GetComponent<Rigidbody2D>();
+            
+            GetItem(true, true, false, false);  
+            bootsForce = new Vector2(0f, jumpForce);
             InvokeRepeating("GraplingSkill", 10f, 10.0f);
 
         }
@@ -58,7 +63,6 @@ public class ItemController : MonoBehaviour
             GetItem(true, false, false, true);
             TagChanger("NotEnemy","enemy");
             
-
         }
         else
         {
@@ -67,11 +71,16 @@ public class ItemController : MonoBehaviour
         }
     }
 
-    
-    private void GetItem(bool b_Pick , bool b_Grapling, bool b_Machette , bool b_Helmet)
+    private void Update()
+    {
+        
+    }
+
+
+    private void GetItem(bool b_Pick , bool b_Boots, bool b_Machette , bool b_Helmet)
     {
         pick.SetActive(b_Pick);
-        grapling.SetActive(b_Grapling);
+        boots.SetActive(b_Boots);
         machette.SetActive(b_Machette);
         helmet.SetActive(b_Helmet);
     }
@@ -86,10 +95,23 @@ public class ItemController : MonoBehaviour
     void GraplingSkill()
     {
 
-        rb.velocity = graplingForce;
-        Debug.Log("1");
+        flame1.SetActive(true);
+        flame2.SetActive(true);
+        rb.velocity = bootsForce;
 
+        StartCoroutine(CloseFlames());
     }
+
+    IEnumerator CloseFlames()
+    {
+        yield return new WaitForSeconds(1f);
+
+        flame1.SetActive(false);
+        flame2.SetActive(false);
+    }
+
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -126,5 +148,7 @@ public class ItemController : MonoBehaviour
         }
 
     }
+
+
 
 }
