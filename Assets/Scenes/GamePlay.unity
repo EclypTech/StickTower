@@ -6153,7 +6153,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.032955766, y: 1.4481364}
+  m_Offset: {x: 0.09748769, y: 1.4481364}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6164,7 +6164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.117346, y: 0.09256005}
+  m_Size: {x: 4.3782325, y: 0.09256005}
   m_EdgeRadius: 0
 --- !u!114 &2118998385
 MonoBehaviour:
@@ -6406,6 +6406,13 @@ MonoBehaviour:
   machette: {fileID: 1667308362}
   helmet: {fileID: 1890781529}
   itemSelectNum: 0
+  RockPrefab: {fileID: 7704474825079366278, guid: 5b5b8a42eee2cf34797616d7dbced05c, type: 3}
+  SmashedRockPrefab: {fileID: 4782898664973580610, guid: 7aa87610d01b0584db21c5d011d97e7c, type: 3}
+  VulturePrefab: {fileID: 993416847290540938, guid: 3c2f59d91e6a23a42aa1c943cce366c2, type: 3}
+  Machette: {fileID: 7339222465358605173, guid: b8c9d0160336c204c880ac82b6a23368, type: 3}
+  maxForce: 100
+  minForce: -100
+  radius: 5
 --- !u!1 &2126384348
 GameObject:
   m_ObjectHideFlags: 0
