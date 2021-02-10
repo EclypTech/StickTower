@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4579519541144803621
+--- !u!1 &5960917913773009101
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4579519541144803618}
-  - component: {fileID: 4579519541144803619}
-  - component: {fileID: 4579519541144803620}
+  - component: {fileID: 5960917913773009098}
+  - component: {fileID: 5960917913773009099}
+  - component: {fileID: 5960917913773009097}
   m_Layer: 0
   m_Name: SFX
   m_TagString: Untagged
@@ -18,13 +18,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4579519541144803618
+--- !u!4 &5960917913773009098
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4579519541144803621}
+  m_GameObject: {fileID: 5960917913773009101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 347.76324, y: 947.7213, z: -5224.617}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &4579519541144803619
+--- !u!82 &5960917913773009099
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4579519541144803621}
+  m_GameObject: {fileID: 5960917913773009101}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -128,19 +128,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4579519541144803620
+--- !u!114 &5960917913773009097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4579519541144803621}
+  m_GameObject: {fileID: 5960917913773009101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c861c567b0dd279449f7edf4a048e804, type: 3}
+  m_Script: {fileID: 11500000, guid: 9729e25be922ae34ebc94213f287073d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
-  audioSource: {fileID: 4579519541144803619}
-  sfxSettings: 0
-  musicCheck: 0
+  SFX: {fileID: 5960917913773009099}
+  PickClips:
+  - {fileID: 8300000, guid: 7f5d8c5cc8cbd234d998a58d8e210f2f, type: 3}
+  - {fileID: 8300000, guid: 4a0c67c666a15754a962425758d6fc53, type: 3}
+  - {fileID: 8300000, guid: 3b94f55595e201b40a0c354f02e455ac, type: 3}
+  - {fileID: 8300000, guid: b3fd79c709cc5da41928ea3587112659, type: 3}
+  - {fileID: 8300000, guid: 91a6f84584a93d340bb6c46aaf02874e, type: 3}
+  - {fileID: 8300000, guid: 3acb780e4055fb64383d4669c06110ca, type: 3}
+  - {fileID: 8300000, guid: 71621ad6b0683854bb158751f353603b, type: 3}
+  - {fileID: 8300000, guid: 393deb76d8f67e242bb8513f55df50de, type: 3}
+  fallingRock: {fileID: 8300000, guid: d40cb9c1ee81a0445aac6c9e92f9d09b, type: 3}
+  smashedRock: {fileID: 8300000, guid: 5d52beef2f5938b4ea4e7da826b40661, type: 3}
+  drink: {fileID: 8300000, guid: acb40b1773739a1499f013502a8208c4, type: 3}
+  vulture: {fileID: 8300000, guid: c627927994772f24fbf7d6f00f0355d5, type: 3}
+  vultureDead: {fileID: 8300000, guid: d197603a1b592454bbdb5940aaec777f, type: 3}
+  landing: {fileID: 8300000, guid: d9e01a61d5470564084cb1c1c32c78a4, type: 3}
+  rocket: {fileID: 8300000, guid: 75857dbef004cb34886e287c5472112b, type: 3}
+  opalCollect: {fileID: 8300000, guid: fff7dd6a0c4c1624483520b8cbeb9d65, type: 3}
+  machette: {fileID: 8300000, guid: 4b1171e95f93c93459e3be16d6d2a783, type: 3}
+  dead: {fileID: 8300000, guid: bc89641bd1969f1469fdbc75c93fc8f0, type: 3}
