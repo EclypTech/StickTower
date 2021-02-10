@@ -10,9 +10,10 @@ public class VultureGenerator : MonoBehaviour
     public float ranY = 10;
     public float cnum = 50;
 
+    
     void Start()
     {
-
+        
     }
 
     void Update()
@@ -23,7 +24,10 @@ public class VultureGenerator : MonoBehaviour
         if (findgenerator.score == cnum)
         {
             cnum += 20;
+            GameObject SFX = GameObject.Find("SFX");
+            SFX.GetComponent<SoundEffects>().Vulture();
             SpawnVulture();
+            
         }
     }
 

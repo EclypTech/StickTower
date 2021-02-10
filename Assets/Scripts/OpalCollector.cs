@@ -25,6 +25,8 @@ public class OpalCollector : MonoBehaviour
             opalnum.OpalNum += 1;
             opalCount += 1; // added score to total opal number.
             PlayerPrefs.SetInt("totalOpal", opalCount);// adding the new total number to prefs.
+            GameObject SFX = GameObject.Find("SFX");
+            SFX.GetComponent<SoundEffects>().OpalCollect();
             Destroy(gameObject);
         }
     }

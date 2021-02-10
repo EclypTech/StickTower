@@ -21,6 +21,8 @@ public class StaminaCollector : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             GameObject bar = GameObject.Find("StaminaBar");
+            GameObject SFX = GameObject.Find("SFX");
+            SFX.GetComponent<SoundEffects>().Drink();
             StaminaBar staminaScript = bar.GetComponent<StaminaBar>();
             staminaScript.slider.value += 25;
             Destroy(gameObject);

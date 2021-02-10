@@ -98,6 +98,8 @@ public class ItemController : MonoBehaviour
         flame1.SetActive(true);
         flame2.SetActive(true);
         rb.velocity = bootsForce;
+        GameObject SFX = GameObject.Find("SFX");
+        SFX.GetComponent<SoundEffects>().Rocket();
 
         StartCoroutine(CloseFlames());
     }
@@ -123,7 +125,9 @@ public class ItemController : MonoBehaviour
 
             Destroy(collision.gameObject);
 
-            Debug.Log(smashedRock.transform.childCount);
+            GameObject SFX = GameObject.Find("SFX");
+            SFX.GetComponent<SoundEffects>().SmashedRock();
+
 
             for(int i = 0; i < smashedRock.transform.childCount; i++)
             {
@@ -140,10 +144,13 @@ public class ItemController : MonoBehaviour
 
         if(collision.transform.tag == "NotEnemy" && itemSelectNum == 2)
         {
+            GameObject SFX = GameObject.Find("SFX");
+            SFX.GetComponent<SoundEffects>().Machette();
             collision.gameObject.transform.eulerAngles = new Vector2(180, 0) ;
             collision.gameObject.GetComponent<Animator>().enabled = false;
-            collision.gameObject.AddComponent<Rigidbody2D>();
-            
+            collision.gameObject.AddComponent<Rigidbody2D>();    
+            SFX.GetComponent<SoundEffects>().VultureDead();
+
 
         }
 

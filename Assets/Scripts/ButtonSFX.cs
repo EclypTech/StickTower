@@ -10,5 +10,15 @@ public class ButtonSFX : MonoBehaviour
     public void ButtonSound()
     {
         buttonSFX.PlayOneShot(clickSFX);
+
+
+        StartCoroutine(DestroySound());
+        
+    }
+    
+    IEnumerator DestroySound()
+    {
+        yield return new WaitForSeconds(1f);
+        
     }
 }

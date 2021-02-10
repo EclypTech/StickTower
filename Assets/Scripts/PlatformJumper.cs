@@ -14,6 +14,8 @@ public class PlatformJumper : MonoBehaviour
             Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>(); // Determine which colliders touch.
             if (collision.transform.tag == "Player")  // If touch..
             {
+                GameObject SFX = GameObject.Find("SFX");
+                SFX.GetComponent<SoundEffects>().Pick();
                 Vector2 velocity = rb.velocity;  // Determine vector velocity for Rigidbody.
                 velocity.y = jumpForce;  // Add vertical force to velocity.
                 rb.velocity = velocity;  // Equal this vertical velocity to Rigidbody velocity.

@@ -19,7 +19,8 @@ public class EnemyInteraction : MonoBehaviour
     {
         if (collision.transform.tag == "enemy")
         {
-
+            GameObject SFX = GameObject.Find("SFX");
+            SFX.GetComponent<SoundEffects>().Dead();
             transform.eulerAngles = new Vector2(180, 0);
             animator.SetTrigger("IsDead");
             GetComponent<BoxCollider2D>().enabled = false;

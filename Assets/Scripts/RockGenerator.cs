@@ -9,10 +9,11 @@ public class RockGenerator : MonoBehaviour
     public float rokX = 2.5f;
     public float rokY = 10;
     public float roknum = 80;
+    
 
     void Start()
     {
-
+        
     }
 
     void Update()
@@ -23,7 +24,10 @@ public class RockGenerator : MonoBehaviour
         if (findgenerator.score == roknum)
         {
             roknum += 80;
+            GameObject SFX = GameObject.Find("SFX");
+            SFX.GetComponent<SoundEffects>().FallingRock();
             SpawnRock();
+            
         }
     }
 
