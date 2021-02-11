@@ -6,8 +6,16 @@ public class SoundEffects : MonoBehaviour
 {
     public AudioSource SFX;
     public AudioClip[] PickClips;
+    private float sfxVolume;
 
     [SerializeField] private AudioClip fallingRock, smashedRock, drink, vulture, vultureDead, landing, rocket, opalCollect, machette,dead;
+
+
+    private void Start()
+    {
+        sfxVolume = PlayerPrefs.GetFloat("sfxLevel");
+        SFX.volume = sfxVolume;
+    }
 
     public void Pick()
     {

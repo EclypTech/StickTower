@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // It used when we create main menu which means new scenes.
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;// It used when we create main menu which means new scenes.
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseCanvas; // Define game object which means canvaspause.(PauseMenu)
     public GameObject JoystickCanvas; // Define Game Object which is closing.(GameCanvas)
     public int sceneId = 0;
+
+    [SerializeField] private AudioSource SFX;
+    [SerializeField] private GameObject soundCloser;
+    [SerializeField] private GameObject soundOpener;
 
     void Update()
     {
@@ -39,10 +44,21 @@ public class PauseMenu : MonoBehaviour
         // We use upper command when we create main manu scene.
     }
 
-    public void QuitGame() // Quit game function. Triggered in the pause menu.
+    public void CloseSound() // Quit game function. Triggered in the pause menu.
     {
-        Debug.Log("Quiting Game..."); // Command.
-        Application.Quit(); //Quit game. It didnt works in the editor part.
+        SFX.volume = 0f;
+        soundOpener.SetActive(true);
+        soundCloser.SetActive(false);
+        
     }
+
+    public void OpenSound()
+    {
+        SFX.volume = PlayerPrefs.GetFloat("sfxLevel");
+        soundCloser.SetActive(true);
+        soundOpener.SetActive(false);
+
+    }
+
 
 }
