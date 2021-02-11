@@ -14,6 +14,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private AudioSource SFX;
     [SerializeField] private GameObject soundCloser;
     [SerializeField] private GameObject soundOpener;
+    [SerializeField] private GameObject ResumeCountDown;
+    [SerializeField] private GameObject GameCanvas;
 
     void Update()
     {
@@ -25,7 +27,9 @@ public class PauseMenu : MonoBehaviour
         JoystickCanvas.SetActive(true);  // Active joystics canvas.
         PauseCanvas.SetActive(false); // Close the pause menu.
         Time.timeScale = 1f;          // Resume the time.
-        GameIsPaused = false;         // Value is false.
+        GameIsPaused = false;
+        (Instantiate(ResumeCountDown, new Vector3(0f, 0f, 0f), Quaternion.identity) as GameObject).transform.parent = GameCanvas.transform;
+        // Value is false.
     }
 
     public void Pause ()  // Pause function.

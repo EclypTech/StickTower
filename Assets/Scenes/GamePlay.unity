@@ -6507,7 +6507,7 @@ Transform:
   m_LocalScale: {x: 0.745448, y: 0.6765, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &538842964
 GameObject:
@@ -16118,7 +16118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpalNum: 0
-  OpalPrefab: {fileID: 4462224792214725855, guid: 78ddb14e1d7b15c4dbe22b957af4987f, type: 3}
+  OpalPrefab: {fileID: 2656069791485867592, guid: 8dbdb348f005c054e805cd42e2202e13, type: 3}
   OpalVec: {x: 0, y: 0, z: 0}
   ranX: 2.5
   ranY: 12
@@ -16320,7 +16320,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5960917913773009098, guid: 92d9c6e8a7c1dc742843c61c066e3c48, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5960917913773009098, guid: 92d9c6e8a7c1dc742843c61c066e3c48, type: 3}
       propertyPath: m_LocalPosition.x

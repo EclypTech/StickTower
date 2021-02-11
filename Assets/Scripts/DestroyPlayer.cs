@@ -6,6 +6,7 @@ public class DestroyPlayer : MonoBehaviour
 {
     public GameObject DestroyerPoint;  // Define Game object.
     public GameObject GameOverCanvas;
+    [SerializeField] private GameObject ResumeCountDown;
 
     void Start()
     {
@@ -39,7 +40,8 @@ public class DestroyPlayer : MonoBehaviour
         StaminaBar findbar = findstamina.GetComponent<StaminaBar>();
         findbar.slider.value = findbar.slider.maxValue;
         GameOverCanvas.SetActive(false);
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
+        Instantiate(ResumeCountDown, new Vector3(0, 0, 0), Quaternion.identity);
         rb.velocity = new Vector2(0 , 10);
         GetComponent<BoxCollider2D>().enabled = true;
 
