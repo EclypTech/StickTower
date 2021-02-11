@@ -102,7 +102,7 @@ public class StatButtons : MonoBehaviour
 
     public void Load() // silinecek öðe var.
     {
-        PlayerPrefs.SetInt("levelCounterNum",99); // deneme için duruyor.
+        PlayerPrefs.SetInt("levelCounterNum",15); // deneme için duruyor.
         levelCounterNum = PlayerPrefs.GetInt("levelCounterNum");
         maxStat = PlayerPrefs.GetInt("maxStat");
         StatText.text = levelCounterNum.ToString();
@@ -171,8 +171,13 @@ public class StatButtons : MonoBehaviour
 
     }
 
-    public void RecycleStats()
+    public void RecycleStats()  // yýldýzlar geri kapanmýyor.
     {
+        JumpStarCounter = 0;
+        MoveStarCounter = 0;
+        StaminaStarCounter = 0;
+        levelCounterNum = PlayerPrefs.GetInt("playerLevel");
+        StatText.text = levelCounterNum.ToString();
 
     }
 }

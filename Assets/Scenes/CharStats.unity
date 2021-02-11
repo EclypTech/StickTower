@@ -220,9 +220,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3683114}
-        m_TargetAssemblyTypeName: BuyItem, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 37584357}
+        m_TargetAssemblyTypeName: StatButtons, Assembly-CSharp
+        m_MethodName: RecycleStats
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1766,7 +1766,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 832203728}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 37584357}
+        m_TargetAssemblyTypeName: StatButtons, Assembly-CSharp
+        m_MethodName: RecycleButtonPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &832203728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1875,9 +1887,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You are about to buy ?.
-
-    Do you want to buy it for ? Opal?'
+  m_Text: 'Are you sure to recycle your stats? '
 --- !u!222 &838420407
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2393,7 +2403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
