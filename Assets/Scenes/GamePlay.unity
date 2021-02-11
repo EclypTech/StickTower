@@ -612,6 +612,8 @@ MonoBehaviour:
   SFX: {fileID: 454149334}
   soundCloser: {fileID: 373779631}
   soundOpener: {fileID: 1261317000}
+  ResumeCountDown: {fileID: 2332730204980428283, guid: 254d45aa49d8590459987998a61ddc86, type: 3}
+  GameCanvas: {fileID: 956769692}
 --- !u!1 &96547179
 GameObject:
   m_ObjectHideFlags: 0
@@ -16074,6 +16076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyerPoint: {fileID: 0}
   GameOverCanvas: {fileID: 106529649}
+  ResumeCountDown: {fileID: 2332730204980428283, guid: 254d45aa49d8590459987998a61ddc86, type: 3}
 --- !u!114 &2118998390
 MonoBehaviour:
   m_ObjectHideFlags: 0
