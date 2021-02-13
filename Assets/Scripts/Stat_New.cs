@@ -7,7 +7,7 @@ public class Stat_New : MonoBehaviour
 {
     public Text StatText;
     public int levelCounterNum;
-    public int maxStat = 1;
+    public int maxStat;
     public int CurrentLevel;
 
     public int JumpStarCounter;

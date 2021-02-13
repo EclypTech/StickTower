@@ -17,7 +17,7 @@ public class Stat_Counter : MonoBehaviour
         if (CurrentLevel > maxStat)
         {
             levelCounterNum += (CurrentLevel - maxStat);
-            maxStat = levelCounterNum;
+            maxStat = CurrentLevel;
             Save();
         }
 
