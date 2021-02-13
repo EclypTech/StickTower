@@ -1461,7 +1461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.8913269, y: 1.0997009}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -6.8600082, y: -10.264801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371297983
@@ -2929,7 +2929,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3578,7 +3578,7 @@ MonoBehaviour:
   maxEnergy: 25
   currentEnergy: 0
   worked: 0
-  changeSceneTo: 1
+  changeSceneTo: 6
   VideoPanel: {fileID: 358168758}
 --- !u!1 &926297648
 GameObject:
@@ -4294,7 +4294,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4491,7 +4491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.798584, y: -0.12658691}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -4.060013, y: -9.095699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1370916074
@@ -5331,7 +5331,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6790,7 +6790,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

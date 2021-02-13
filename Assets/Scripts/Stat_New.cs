@@ -7,7 +7,7 @@ public class Stat_New : MonoBehaviour
 {
     public Text StatText;
     public int levelCounterNum;
-    public int maxStat;
+    public int maxStat = 1;
     public int CurrentLevel;
 
     public int JumpStarCounter;
@@ -44,6 +44,7 @@ public class Stat_New : MonoBehaviour
                 levelCounterNum -= 1;
                 JumpStarCounter += 1;
                 StatText.text = levelCounterNum.ToString();
+
                 JumpLoop();
                 Save();
             }

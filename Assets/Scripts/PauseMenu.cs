@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false; 
     public GameObject PauseCanvas; // Define game object which means canvaspause.(PauseMenu)
     public GameObject JoystickCanvas; // Define Game Object which is closing.(GameCanvas)
-    public int sceneId = 0;
+    public int sceneId = 1;
 
     [SerializeField] private AudioSource SFX;
     [SerializeField] private GameObject soundCloser;
