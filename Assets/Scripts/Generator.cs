@@ -23,7 +23,7 @@ public class Generator : MonoBehaviour
     }
 
 
-    void Update()                       // Update contiuously..
+    void FixedUpdate()                       // Update contiuously..
     {
         if ( score == movNum && score <= 50 && score + 10 == num)
         {
