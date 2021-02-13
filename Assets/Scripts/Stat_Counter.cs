@@ -14,10 +14,10 @@ public class Stat_Counter : MonoBehaviour
     {
         Load();
         CurrentLevel = PlayerPrefs.GetInt("playerLevel");
-        maxStat = 1;
         if (CurrentLevel > maxStat)
         {
             levelCounterNum += (CurrentLevel - maxStat);
+            maxStat = levelCounterNum;
             Save();
         }
 
@@ -34,6 +34,7 @@ public class Stat_Counter : MonoBehaviour
     {
         levelCounterNum = PlayerPrefs.GetInt("levelCounterNum");
         maxStat = PlayerPrefs.GetInt("maxStat");
+        CurrentLevel = PlayerPrefs.GetInt("CurrentLevel");
     }
 
 
@@ -41,6 +42,8 @@ public class Stat_Counter : MonoBehaviour
     {
         PlayerPrefs.SetInt("levelCounterNum" , levelCounterNum);
         PlayerPrefs.SetInt("maxStat" , maxStat);
+        PlayerPrefs.SetInt("CurrentLevel", CurrentLevel);
+
         PlayerPrefs.Save();
     }
 

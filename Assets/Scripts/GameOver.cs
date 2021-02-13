@@ -66,6 +66,6 @@ public class GameOver : MonoBehaviour
 
     void XpCalculator()
     {
-        totalXp = newScore * 10;   
+        totalXp = newScore * 100;   
     }
 }

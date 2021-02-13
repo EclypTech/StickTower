@@ -21,7 +21,7 @@ public class StaminaBar : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()

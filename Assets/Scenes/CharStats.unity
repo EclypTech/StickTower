@@ -221,7 +221,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 37584357}
-        m_TargetAssemblyTypeName: StatButtons, Assembly-CSharp
+        m_TargetAssemblyTypeName: Stat_New, Assembly-CSharp
         m_MethodName: RecycleStats
         m_Mode: 1
         m_Arguments:
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 37584352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3f8efa7b1993aa4c8447937b4cb4d26, type: 3}
+  m_Script: {fileID: 11500000, guid: c01c54c35ce98914babfa67d1594a423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StatText: {fileID: 1028020523}
@@ -461,9 +461,25 @@ MonoBehaviour:
   JumpStarCounter: 0
   MoveStarCounter: 0
   StaminaStarCounter: 0
-  JumpStr: 
-  moveStr: 
-  staminaStr: 
+  JumpStarObj:
+  - {fileID: 425149783}
+  - {fileID: 155846828}
+  - {fileID: 1873345172}
+  - {fileID: 1734851865}
+  - {fileID: 1220542345}
+  MoveStarObj:
+  - {fileID: 957383892}
+  - {fileID: 1521717011}
+  - {fileID: 1443971245}
+  - {fileID: 908810288}
+  - {fileID: 678298146}
+  StamStarObj:
+  - {fileID: 1233014237}
+  - {fileID: 873952679}
+  - {fileID: 18770849}
+  - {fileID: 1939223984}
+  - {fileID: 371239361}
+  RecyPanel: {fileID: 2093720061}
 --- !u!1 &155846828
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +625,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: cancel
+  m_Text: No
 --- !u!222 &159316793
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1768,7 +1784,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 37584357}
-        m_TargetAssemblyTypeName: StatButtons, Assembly-CSharp
+        m_TargetAssemblyTypeName: Stat_New, Assembly-CSharp
         m_MethodName: RecycleButtonPanel
         m_Mode: 1
         m_Arguments:
@@ -2054,7 +2070,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 37584357}
-        m_TargetAssemblyTypeName: StatButtons, Assembly-CSharp
+        m_TargetAssemblyTypeName: Stat_New, Assembly-CSharp
         m_MethodName: MoveButtonTrigger
         m_Mode: 1
         m_Arguments:
@@ -2173,7 +2189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buy
+  m_Text: Yes
 --- !u!222 &885068004
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2403,7 +2419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0.5019608, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3082,7 +3098,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 37584357}
-        m_TargetAssemblyTypeName: StatButtons, Assembly-CSharp
+        m_TargetAssemblyTypeName: Stat_New, Assembly-CSharp
         m_MethodName: JumpButtonTrigger
         m_Mode: 1
         m_Arguments:
@@ -4069,7 +4085,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 37584357}
-        m_TargetAssemblyTypeName: StatButtons, Assembly-CSharp
+        m_TargetAssemblyTypeName: Stat_New, Assembly-CSharp
         m_MethodName: StaminaButtonTrigger
         m_Mode: 1
         m_Arguments:

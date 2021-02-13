@@ -8,14 +8,21 @@ public class PlayerMovement : MonoBehaviour
 	float moveInput;  // To determine direction. Only one ore minus one.
 	Rigidbody2D rb;   // Determine Rigidbody to script.
 
+	public int MoveStarCounter;
+
 	Animator animator;
 	public int animcount = 0;
 
 	// Use this for initialization
 	void Start()
 	{
+		Load();
 		rb = GetComponent<Rigidbody2D>();  // Get Rigidbody at the beginning.
 		animator = GetComponent<Animator>();
+
+		movementSpeed = 4 + MoveStarCounter;
+
+		Save();
 	}
 
 
@@ -66,4 +73,15 @@ public class PlayerMovement : MonoBehaviour
 	}
 
 
+    public void Load()
+    {
+		movementSpeed = PlayerPrefs.GetInt("movementSpeed");
+		MoveStarCounter = PlayerPrefs.GetInt("MoveStarCounter");
+	}
+
+	public void Save()
+	{
+		PlayerPrefs.SetInt("movementSpeed", movementSpeed);
+		PlayerPrefs.SetInt("MoveStarCounter", MoveStarCounter);
+	}
 }

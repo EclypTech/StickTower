@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlatformJumper : MonoBehaviour
 {
     // Player jump part.
-    public float jumpForce = 10f;  // Determine current force.
+    public int jumpForce;  // Determine current force.
+
+    public int JumpStarCounter;
 
     private void OnCollisionEnter2D(Collision2D collision)  // When touch..
     {
@@ -25,11 +27,26 @@ public class PlatformJumper : MonoBehaviour
 
     void Start()
     {
-
+        Load();
+        jumpForce = 11 + JumpStarCounter;
+        Save();
     }
 
     void Update()
     {
         
     }
+
+
+    public void Save()
+    {
+        PlayerPrefs.SetInt("jumpForce", jumpForce);
+    }
+
+    public void Load()
+    {
+        jumpForce = PlayerPrefs.GetInt("jumpForce");
+        JumpStarCounter = PlayerPrefs.GetInt("JumpStarCounter");
+    }
+
 }

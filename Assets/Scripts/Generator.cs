@@ -45,6 +45,7 @@ public class Generator : MonoBehaviour
             {
                 rangeY += 0.5f;
             }
+
             platformPrefab.GetComponent<MoveDen>().enabled = true;
             num += 1;                   // Add 3 more spawn number.
             GeneratorGeneral();         // Run Platform Generator.(line34)

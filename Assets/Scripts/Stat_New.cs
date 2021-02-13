@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatButtons : MonoBehaviour
+public class Stat_New : MonoBehaviour
 {
     public Text StatText;
     public int levelCounterNum;
@@ -14,46 +14,26 @@ public class StatButtons : MonoBehaviour
     public int MoveStarCounter;
     public int StaminaStarCounter;
 
-    GameObject jumpstarobj ;
-    GameObject movestarobj ;
-    GameObject stamstarobj ;
+    public GameObject[] JumpStarObj;
+    public GameObject[] MoveStarObj;
+    public GameObject[] StamStarObj;
 
-    public string JumpStr;
-    public string moveStr;
-    public string staminaStr;
-
-    GameObject RecyPanel;
+    public GameObject RecyPanel;
 
     void Start()
     {
         Load();
 
-        for (int i = 1; i <= StaminaStarCounter; i++)
-        {
-             staminaStr = "t" + i.ToString();
-             stamstarobj = GameObject.Find(staminaStr);
-             stamstarobj.SetActive(false);
-        }
-
-        for (int i = 1; i <= JumpStarCounter; i++)
-        {
-            JumpStr = "s" + i.ToString();
-            jumpstarobj = GameObject.Find(JumpStr);
-            jumpstarobj.SetActive(false);
-        }
-
-        for (int i = 1; i <= MoveStarCounter; i++)
-        {
-            moveStr = "m" + i.ToString();
-            movestarobj = GameObject.Find(moveStr);
-            movestarobj.SetActive(false);
-        }
+        JumpLoop();
+        MoveLoop();
+        StaminaLoop();
     }
 
     void Update()
     {
         
     }
+
 
     public void JumpButtonTrigger()
     {
@@ -100,22 +80,25 @@ public class StatButtons : MonoBehaviour
         }
     }
 
-    public void Load() // silinecek öðe var.
+
+    public void Load()
     {
-        PlayerPrefs.SetInt("levelCounterNum",15); // deneme için duruyor.
         levelCounterNum = PlayerPrefs.GetInt("levelCounterNum");
         maxStat = PlayerPrefs.GetInt("maxStat");
         StatText.text = levelCounterNum.ToString();
+        CurrentLevel = PlayerPrefs.GetInt("CurrentLevel");
 
         JumpStarCounter = PlayerPrefs.GetInt("JumpStarCounter");
         MoveStarCounter = PlayerPrefs.GetInt("MoveStarCounter");
         StaminaStarCounter = PlayerPrefs.GetInt("StaminaStarCounter");
+
     }
 
     public void Save()
     {
         PlayerPrefs.SetInt("levelCounterNum", levelCounterNum);
         PlayerPrefs.SetInt("maxStat", maxStat);
+        PlayerPrefs.SetInt("CurrentLevel", CurrentLevel);
 
         PlayerPrefs.SetInt("JumpStarCounter", JumpStarCounter);
         PlayerPrefs.SetInt("MoveStarCounter", MoveStarCounter);
@@ -124,54 +107,40 @@ public class StatButtons : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+
     public void JumpLoop()
     {
-        for (int i = 1; i <= JumpStarCounter; i++)
+        for (int i = 0; i <= JumpStarCounter - 1; i++)
         {
-            if(i == JumpStarCounter)
-            {
-                JumpStr = "s" + i.ToString();
-                jumpstarobj = GameObject.Find(JumpStr);
-                jumpstarobj.SetActive(false);
-            }
+            JumpStarObj[i].SetActive(false);
+
+
         }
     }
 
     public void MoveLoop()
     {
-        for (int i = 1; i <= MoveStarCounter; i++)
+        for (int i = 0; i <= MoveStarCounter - 1; i++)
         {
-            if (i == MoveStarCounter)
-            {
-                moveStr = "m" + i.ToString();
-                movestarobj = GameObject.Find(moveStr);
-                movestarobj.SetActive(false);
-            }
+            MoveStarObj[i].SetActive(false);
         }
     }
 
     public void StaminaLoop()
     {
-        for (int i = 1; i <= StaminaStarCounter; i++)
+        for (int i = 0; i <= StaminaStarCounter - 1; i++)
         {
-            if (i == StaminaStarCounter)
-            {
-                staminaStr = "t" + i.ToString();
-                stamstarobj = GameObject.Find(staminaStr);
-                stamstarobj.SetActive(false);
-            }
+            StamStarObj[i].SetActive(false);
         }
     }
 
+
     public void RecycleButtonPanel()
     {
-        RecyPanel = GameObject.Find("RecyclePanel");
         RecyPanel.SetActive(true);  // Open the pause menu.
-        Time.timeScale = 0f;          // Freeze the time.
-
     }
 
-    public void RecycleStats()  // yýldýzlar geri kapanmýyor.
+    public void RecycleStats()
     {
         JumpStarCounter = 0;
         MoveStarCounter = 0;
@@ -179,5 +148,29 @@ public class StatButtons : MonoBehaviour
         levelCounterNum = PlayerPrefs.GetInt("playerLevel");
         StatText.text = levelCounterNum.ToString();
 
+        for (int i = 0; i <= 4; i++)
+        {
+            JumpStarObj[i].SetActive(true);
+        }
+
+        for (int i = 0; i <= 4; i++)
+        {
+            MoveStarObj[i].SetActive(true);
+        }
+
+        for (int i = 0; i <= 4; i++)
+        {
+            StamStarObj[i].SetActive(true);
+        }
+
+        RecyPanel.SetActive(false);
+
+        Save();
+
     }
+
+
+
+
+
 }
