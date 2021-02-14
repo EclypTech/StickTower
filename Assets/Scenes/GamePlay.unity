@@ -7404,7 +7404,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 614556dfeca834d46810832c01bf4ec6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -7417,7 +7416,6 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1187120067
 CanvasRenderer:
-=======
   m_FontData:
     m_Font: {fileID: 12800000, guid: b3660add7271526459990ed9859bd4f6, type: 3}
     m_FontSize: 18
@@ -7525,7 +7523,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &998078217
 MonoBehaviour:
->>>>>>> 3a74a0aab79f9c8e9ec386ca589c8a547bc59bd0
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}

@@ -26,7 +26,7 @@ public class DestroyPlayer : MonoBehaviour
         if (transform.position.y < DestroyerPoint.transform.position.y && !onetime )
         // If player has a lower vertical value from the lower limit of camera..
         {
-            (Instantiate(GameOverCanvas, new Vector3(0f, 0f, 0f), Quaternion.identity) as GameObject).transform.parent = GameCanvas.transform;
+            (Instantiate(GameOverCanvas, new Vector3(0f, 0f, 0f), Quaternion.identity) as GameObject).transform.SetParent(GameCanvas.transform);
             onetime = true;
         }
 
