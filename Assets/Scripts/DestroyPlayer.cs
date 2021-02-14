@@ -7,23 +7,34 @@ public class DestroyPlayer : MonoBehaviour
     public GameObject DestroyerPoint;  // Define Game object.
     public GameObject GameOverCanvas;
     [SerializeField] private GameObject ResumeCountDown;
+    [SerializeField] private GameObject GameCanvas;
+    private bool onetime = false;
+    
+    
 
     void Start()
     {
         DestroyerPoint = GameObject.Find("DestroyerPoint");
         //When game start, find destroyer point which means tracking lower from the camera.
-
+        
         
 
     }
-
+    
     void Update()
     {
-        if (transform.position.y < DestroyerPoint.transform.position.y)
+        if (transform.position.y < DestroyerPoint.transform.position.y && !onetime )
         // If player has a lower vertical value from the lower limit of camera..
         {
-            GameOverCanvas.SetActive(true);
+            (Instantiate(GameOverCanvas, new Vector3(0f, 0f, 0f), Quaternion.identity) as GameObject).transform.parent = GameCanvas.transform;
+            onetime = true;
         }
+
+        if (transform.position.y > DestroyerPoint.transform.position.y && onetime)
+        {
+            onetime = false;
+        }
+
 
     }
 
@@ -39,8 +50,7 @@ public class DestroyPlayer : MonoBehaviour
         GameObject findstamina = GameObject.Find("StaminaBar");
         StaminaBar findbar = findstamina.GetComponent<StaminaBar>();
         findbar.slider.value = findbar.slider.maxValue;
-        GameOverCanvas.SetActive(false);
-        //Time.timeScale = 1;
+        Destroy(GameObject.Find("GameOverCanvas(Clone)"));
         Instantiate(ResumeCountDown, new Vector3(0, 0, 0), Quaternion.identity);
         rb.velocity = new Vector2(0 , 10);
         GetComponent<BoxCollider2D>().enabled = true;

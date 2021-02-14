@@ -9,16 +9,17 @@ public class SetSfxVolume : MonoBehaviour
     public Slider slider;
     public AudioSource audioSource;
     public float sfxSettings;
-    public int musicCheck = 0;
+    public int sfxCheck = 0;
 
     private void Start()
     {
-        musicCheck = PlayerPrefs.GetInt("musicCheck");
-        if (musicCheck == 0)
+        sfxCheck = PlayerPrefs.GetInt("sfxCheck");
+        if (sfxCheck == 0)
         {
             sfxSettings = 1;
-            PlayerPrefs.SetInt("musicCheck", 1);
+            PlayerPrefs.SetInt("sfxCheck", 1);
             SetSFXLevel(sfxSettings);
+            
 
 
         }

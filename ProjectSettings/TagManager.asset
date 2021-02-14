@@ -10,6 +10,8 @@ TagManager:
   - MovPlat
   - enemy
   - NotEnemy
+  - XP
+  - Opal
   layers:
   - Default
   - TransparentFX

@@ -31,7 +31,7 @@ public class EnergyManager : MonoBehaviour
 
     public int worked;
 
-    public int changeSceneTo = 1;
+    public int changeSceneTo;
 
     public GameObject VideoPanel;
 
@@ -43,16 +43,19 @@ public class EnergyManager : MonoBehaviour
         if (worked == 0)
         {
             PlayerPrefs.SetInt("currentEnergy", maxEnergy); // On the first opening current energy set to the maximum energy
-            PlayerPrefs.SetInt("worked", 1); // After the settings "worked" setting to 1
+            worked = 1;
+            PlayerPrefs.SetInt("worked", worked); // After the settings "worked" setting to 1
             PlayerPrefs.Save();
             currentEnergy = PlayerPrefs.GetInt("currentEnergy"); //current energy calling from prefs for equalizing
+            energyBar.SetEnergy(currentEnergy);
         }
         else
         {
             currentEnergy = PlayerPrefs.GetInt("currentEnergy"); //if it is not the first opening, current energy getting from prefs.
+            energyBar.SetEnergy(currentEnergy);
         }
         
-        energyBar.SetEnergy(currentEnergy); // energy slider equalizing to current energy (SetEnergy() function is in EnergyBar Script)
+         // energy slider equalizing to current energy (SetEnergy() function is in EnergyBar Script)
 
         Load(); // Loading timer values
         StartCoroutine(RestoreRoutine()); // starting the timer for energy
@@ -120,7 +123,7 @@ public class EnergyManager : MonoBehaviour
 
     private void UpdateEnergy()
     {
-        //currentEnergy = PlayerPrefs.GetInt("currentEnergy");
+        currentEnergy = PlayerPrefs.GetInt("currentEnergy");
         textEnergy.text = currentEnergy.ToString();
         energyBar.SetEnergy(currentEnergy);
     }
@@ -163,6 +166,7 @@ public class EnergyManager : MonoBehaviour
             currentEnergy -= 5;
             SetCurrentEnergy();
             energyBar.SetEnergy(currentEnergy);
+            textEnergy.text = currentEnergy.ToString();
             ChangeScene(changeSceneTo);
         }
         else

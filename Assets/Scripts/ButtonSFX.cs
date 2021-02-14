@@ -6,14 +6,17 @@ public class ButtonSFX : MonoBehaviour
 {
     public AudioSource buttonSFX;
     public AudioClip clickSFX;
+    public AudioClip MapSFX;
 
     public void ButtonSound()
     {
-        buttonSFX.PlayOneShot(clickSFX);
-
-
+        buttonSFX.PlayOneShot(clickSFX); 
         
-        
+    }
+
+    public void MapSound()
+    {
+        buttonSFX.PlayOneShot(MapSFX);
     }
     
 }

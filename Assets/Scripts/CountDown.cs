@@ -10,7 +10,7 @@ public class CountDown : MonoBehaviour
 
     public Text countDownText;
 
-    public int SceneId = 0;
+    private int SceneId = 1;
 
     // Start is called before the first frame update
     void Start()

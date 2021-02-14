@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    public OpalSystem opalSystem;
-    public XPsystem xpSystem;
+    private Text opalSystem;
+    private Text xpSystem;
+    private GameObject Player;
     public int newScore;
     public int newOpalScore;
     public int newHighScore;
@@ -23,6 +24,9 @@ public class GameOver : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0f;
+        xpSystem = GameObject.FindGameObjectWithTag("XP").GetComponent<XPsystem>().scoreText;
+        opalSystem = GameObject.FindGameObjectWithTag("Opal").GetComponent<OpalSystem>().OpalscoreText;
+        
         GetScores();
         
         
@@ -53,8 +57,8 @@ public class GameOver : MonoBehaviour
 
     void GetScores()
     {
-        newScore = int.Parse(xpSystem.scoreText.text);
-        newOpalScore = int.Parse(opalSystem.OpalscoreText.text);
+        newScore = int.Parse(xpSystem.text);
+        newOpalScore = int.Parse(opalSystem.text);
         
 
         newOpalScoreText.text = newOpalScore.ToString();
@@ -66,6 +70,12 @@ public class GameOver : MonoBehaviour
 
     void XpCalculator()
     {
-        totalXp = newScore * 100;   
+        totalXp = newScore * 13;   
+    }
+
+    public void OneChance()
+    {
+      
+       GameObject.Find("Player").GetComponent<DestroyPlayer>().OneMoreChance();
     }
 }
