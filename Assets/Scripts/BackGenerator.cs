@@ -40,6 +40,7 @@ public class BackGenerator : MonoBehaviour
         RandomObj = Random.Range(0, 6);
         SpawnPos.y = findcam.transform.position.y + rY;
         SpawnPos.x = Random.Range(-rX, rX);
+        SpawnPos.z = 2;
         Instantiate(SpawnObjects[RandomObj], SpawnPos, Quaternion.identity);
     }
 }

@@ -70,6 +70,7 @@ public class Generator : MonoBehaviour
     {
         spawnPosition.y += Random.Range(rangeY, rangeY);                        // Define random vertical position between minY and maxY.
         spawnPosition.x = Random.Range(-rangeX, rangeX);                        // Define random horizontal position between max and min level width.
+        spawnPosition.z = 1;
         Instantiate(platformPrefab, spawnPosition, Quaternion.identity);        // Spawn platformPrefab take as basis spawn position.
     }
 }

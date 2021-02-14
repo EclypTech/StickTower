@@ -36,6 +36,7 @@ public class VultureGenerator : MonoBehaviour
         GameObject findcam = GameObject.Find("Main Camera");
         VultureVec.y = Random.Range(findcam.transform.position.y + ranY, findcam.transform.position.y + ranY);
         VultureVec.x = Random.Range(-ranX, ranX);
+        VultureVec.z = -1;
         Instantiate(VulturePrefab, VultureVec, Quaternion.identity);
     }
 }
