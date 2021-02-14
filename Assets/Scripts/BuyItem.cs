@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BuyItem : MonoBehaviour
 {
-    /*private int grapling = 1;
-    private int machette = 2;
-    private int drill = 3;*/
+    
     [SerializeField]
     private GameObject panel;
+    [SerializeField] private GameObject shopPanel;
     private int itemNum;
+    private int itemPrice;
     public void Buy()
     {
         
@@ -17,33 +17,45 @@ public class BuyItem : MonoBehaviour
 
         if(itemNum == 1)
         {
-            Debug.Log("Grapling Buyed");
-            var item = GameObject.Find("GraplingLock");
-            item.SetActive(false);
-            PlayerPrefs.SetInt("grapling", 1);
+            itemPrice = 150;
+            TakeOpal(itemPrice,"GraplingLock","grapling");
+             
         }
         else if(itemNum == 2)
         {
-            Debug.Log("Machette Buyed");
-            var item = GameObject.Find("MachetteLock");
-            item.SetActive(false);
-            PlayerPrefs.SetInt("machette", 1);
+            itemPrice = 250;
+            TakeOpal(itemPrice, "MachetteLock", "machette");
         }
         else if(itemNum == 3)
         {
-            Debug.Log("Drill Buyed");
-            var item = GameObject.Find("DrillLock");
-            item.SetActive(false);
-            PlayerPrefs.SetInt("helmet", 1);
+            itemPrice = 350;
+            TakeOpal(itemPrice, "DrillLock", "helmet");
+            
         }
         else
         {
-            Debug.Log("Baþaramadýk Abi");
+            
         }
 
-        panel.SetActive(false);
-
-        
             
     }
+
+    void TakeOpal(int cost,string itemName,string prefName)
+    {
+        var totalOpal = PlayerPrefs.GetInt("totalOpal");
+        if(totalOpal >= cost)
+        {
+            totalOpal = totalOpal - cost;
+            PlayerPrefs.SetInt("totalOpal", totalOpal);
+            var item = GameObject.Find(itemName);
+            item.SetActive(false);
+            PlayerPrefs.SetInt(prefName, 1);
+            panel.SetActive(false);
+        }
+        else
+        {
+            shopPanel.SetActive(true);
+        }
+    }
+
 }

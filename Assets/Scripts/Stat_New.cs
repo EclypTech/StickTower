@@ -19,6 +19,9 @@ public class Stat_New : MonoBehaviour
     public GameObject[] StamStarObj;
 
     public GameObject RecyPanel;
+    [SerializeField] private GameObject shopPanel;
+    [SerializeField] private GameObject alreadyPanel;
+    private int recycleCost;
 
     void Start()
     {
@@ -143,30 +146,58 @@ public class Stat_New : MonoBehaviour
 
     public void RecycleStats()
     {
-        JumpStarCounter = 0;
-        MoveStarCounter = 0;
-        StaminaStarCounter = 0;
-        levelCounterNum = PlayerPrefs.GetInt("playerLevel");
-        StatText.text = levelCounterNum.ToString();
-
-        for (int i = 0; i <= 4; i++)
+        var opal = PlayerPrefs.GetInt("totalOpal");
+        recycleCost = 50;
+        if (levelCounterNum != PlayerPrefs.GetInt("playerLevel") )
         {
-            JumpStarObj[i].SetActive(true);
+            if(opal >= recycleCost)
+            {
+                JumpStarCounter = 0;
+                MoveStarCounter = 0;
+                StaminaStarCounter = 0;
+                levelCounterNum = PlayerPrefs.GetInt("playerLevel");
+                StatText.text = levelCounterNum.ToString();
+
+                for (int i = 0; i <= 4; i++)
+                {
+                    JumpStarObj[i].SetActive(true);
+                }
+
+                for (int i = 0; i <= 4; i++)
+                {
+                    MoveStarObj[i].SetActive(true);
+                }
+
+                for (int i = 0; i <= 4; i++)
+                {
+                    StamStarObj[i].SetActive(true);
+                }
+
+                opal = opal - recycleCost;
+
+                PlayerPrefs.SetInt("totalOpal", opal);
+
+
+                RecyPanel.SetActive(false);
+
+                Save();
+            }
+            else
+            {
+                shopPanel.SetActive(true);
+            }
+
+            
+        }
+        else
+        {
+            RecyPanel.SetActive(false);
+            alreadyPanel.SetActive(true);
         }
 
-        for (int i = 0; i <= 4; i++)
-        {
-            MoveStarObj[i].SetActive(true);
-        }
 
-        for (int i = 0; i <= 4; i++)
-        {
-            StamStarObj[i].SetActive(true);
-        }
-
-        RecyPanel.SetActive(false);
-
-        Save();
+       
+        
 
     }
 

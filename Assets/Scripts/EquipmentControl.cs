@@ -16,14 +16,18 @@ public class EquipmentControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Checking the selected item
         itemnum1 = PlayerPrefs.GetInt("itemnum");
+
+        //Select the equipment
         Selected(itemnum1);
+
+        //Checking unlocked items
         LockCheck();
         
 
     }
-    //asdfasd
+    //Color changer according to selected item
     public void Selected(int item)
     {
         
@@ -62,6 +66,7 @@ public class EquipmentControl : MonoBehaviour
 
     }
 
+    //Unlock Checker function
     void LockCheck()
     {
         var item1 = GameObject.Find("GraplingLock");
@@ -77,6 +82,7 @@ public class EquipmentControl : MonoBehaviour
 
     }
 
+    //Color changing function
     private void ChangingColor(Color a, Color b, Color c, Color d)
     {
         ColorBlock colorBlockPick = pick.GetComponent<Button>().colors;
