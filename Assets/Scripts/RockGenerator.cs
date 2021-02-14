@@ -36,6 +36,7 @@ public class RockGenerator : MonoBehaviour
         GameObject findcam = GameObject.Find("Main Camera");
         RockVec.y = Random.Range(findcam.transform.position.y + rokY, findcam.transform.position.y + rokY);
         RockVec.x = Random.Range(-rokX, rokX);
+        RockVec.z = -1;
         Instantiate(RockPrefab, RockVec, Quaternion.identity);
     }
 }
