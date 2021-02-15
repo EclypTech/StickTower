@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoadGame.unity
     guid: 29cee15e705877840b4f97623615058a
+  - enabled: 1
+    path: Assets/Scenes/IceMountain.unity
+    guid: acda6dc3b64323a4b83af7a4f740977c
   m_configObjects: {}

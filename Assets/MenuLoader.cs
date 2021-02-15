@@ -1,33 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-public class LevelLoader : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class MenuLoader : MonoBehaviour
 {
     public GameObject LoadingScreen;
     public Slider slider;
-    private int sceneIndex;
-    private int mapNum;
+    private int sceneIndex = 1;
+
     void Start()
     {
-        mapNum = PlayerPrefs.GetInt("mapNum");
-        if(mapNum == 1)
-        {
-            sceneIndex = 7;
-        }
-        else
-        {
-            sceneIndex = 2;
-        }
 
         LoadLevel(sceneIndex);
     }
 
     void Update()
     {
-        
+
     }
 
     IEnumerator LoadAsynchronously(int sceneIndex)
@@ -43,7 +33,7 @@ public class LevelLoader : MonoBehaviour
     }
 
 
-    public void LoadLevel (int sceneIndex)
+    public void LoadLevel(int sceneIndex)
     {
         StartCoroutine(LoadAsynchronously(sceneIndex));
     }
