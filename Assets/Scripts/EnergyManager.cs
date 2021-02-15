@@ -38,6 +38,7 @@ public class EnergyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         worked = PlayerPrefs.GetInt("worked"); // when the first run "worked" return 0 
 
         if (worked == 0)
@@ -123,7 +124,7 @@ public class EnergyManager : MonoBehaviour
 
     private void UpdateEnergy()
     {
-        currentEnergy = PlayerPrefs.GetInt("currentEnergy");
+        //currentEnergy = PlayerPrefs.GetInt("currentEnergy");
         textEnergy.text = currentEnergy.ToString();
         energyBar.SetEnergy(currentEnergy);
     }
