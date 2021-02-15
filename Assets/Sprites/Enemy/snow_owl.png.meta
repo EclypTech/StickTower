@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 1a43977f12d77764fb42ab2ad822af12
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 164239725383980922
+    second: snow_owl_0
+  - first:
+      213: -4285958226962986911
+    second: snow_owl_1
+  - first:
+      213: 4639372450041697928
+    second: snow_owl_2
+  - first:
+      213: -4223323983288402148
+    second: snow_owl_3
+  - first:
+      213: -7909773501754685364
+    second: snow_owl_4
+  - first:
+      213: 1510454169310924718
+    second: snow_owl_5
+  - first:
+      213: -7871446449520368892
+    second: snow_owl_6
+  - first:
+      213: -1423244475417083947
+    second: snow_owl_7
+  - first:
+      213: 3194426862999832898
+    second: snow_owl_8
+  - first:
+      213: 6464684758784765714
+    second: snow_owl_9
+  - first:
+      213: 2675571198183337135
+    second: snow_owl_10
+  - first:
+      213: 4950513931660073510
+    second: snow_owl_11
+  - first:
+      213: -4575649255199097907
+    second: snow_owl_12
+  - first:
+      213: 6268624350338280347
+    second: snow_owl_13
+  - first:
+      213: -6429023135129378454
+    second: snow_owl_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: snow_owl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 229
+        height: 137
+      alignment: 9
+      pivot: {x: 0.9887437, y: 0.7321727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a771589f82f774200800000000000000
+      internalID: 164239725383980922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 75
+        width: 200
+        height: 84
+      alignment: 9
+      pivot: {x: 0.97967774, y: 0.5626673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16845b753b73584c0800000000000000
+      internalID: -4285958226962986911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_2
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 78
+        width: 169
+        height: 84
+      alignment: 9
+      pivot: {x: 0.98632056, y: 0.54705447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8861871b9ac526040800000000000000
+      internalID: 4639372450041697928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_3
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 106
+        width: 171
+        height: 54
+      alignment: 9
+      pivot: {x: 0.9723493, y: 0.30059928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ff4bc963db365c0800000000000000
+      internalID: -4223323983288402148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_4
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 108
+        width: 171
+        height: 60
+      alignment: 9
+      pivot: {x: 0.9753461, y: 0.2374555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c484d1e68e6da3290800000000000000
+      internalID: -7909773501754685364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_5
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 87
+        width: 172
+        height: 102
+      alignment: 9
+      pivot: {x: 0.97784, y: 0.15987337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf0943701636f410800000000000000
+      internalID: 1510454169310924718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_6
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 70
+        width: 209
+        height: 105
+      alignment: 9
+      pivot: {x: 0.9804623, y: 0.15330935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40324dba82103c290800000000000000
+      internalID: -7871446449520368892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_7
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 0
+        width: 229
+        height: 229
+      alignment: 9
+      pivot: {x: 0.9830733, y: 0.3536347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df3a36b0be9f3ce0800000000000000
+      internalID: -1423244475417083947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_8
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 61
+        width: 209
+        height: 105
+      alignment: 9
+      pivot: {x: 0.98044306, y: 0.157257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249021e9e42e45c20800000000000000
+      internalID: 3194426862999832898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_9
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 63
+        width: 173
+        height: 100
+      alignment: 9
+      pivot: {x: 0.98610795, y: 0.14504714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f6f38698c27b950800000000000000
+      internalID: 6464684758784765714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_10
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 58
+        width: 171
+        height: 62
+      alignment: 9
+      pivot: {x: 0.9753675, y: 0.25876778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facebf634d9812520800000000000000
+      internalID: 2675571198183337135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_11
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 34
+        width: 169
+        height: 82
+      alignment: 9
+      pivot: {x: 0.9863195, y: 0.5517566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a98302132c3b440800000000000000
+      internalID: 4950513931660073510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_12
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 40
+        width: 202
+        height: 84
+      alignment: 9
+      pivot: {x: 0.97977257, y: 0.5495456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbb317ce370080c0800000000000000
+      internalID: -4575649255199097907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_13
+      rect:
+        serializedVersion: 2
+        x: 3310
+        y: 0
+        width: 229
+        height: 229
+      alignment: 9
+      pivot: {x: 0.99241674, y: 0.43627307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9be64052a0aef650800000000000000
+      internalID: 6268624350338280347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_owl_14
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 54
+        width: 171
+        height: 54
+      alignment: 9
+      pivot: {x: 0.9724121, y: 0.30731216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6168d1658587c6a0800000000000000
+      internalID: -6429023135129378454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
