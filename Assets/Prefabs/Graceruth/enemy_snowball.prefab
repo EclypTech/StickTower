@@ -4847,7 +4847,7 @@ GameObject:
   - component: {fileID: 6583543900153600139}
   - component: {fileID: 4187733755585492194}
   m_Layer: 0
-  m_Name: enemy_rock_sprite_0 1
+  m_Name: enemy_snowball
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

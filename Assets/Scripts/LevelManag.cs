@@ -15,7 +15,9 @@ public class LevelManag : MonoBehaviour
 
     void Start()
     {
-       
+        //PlayerPrefs.SetInt("playerLevel", 7);
+        //PlayerPrefs.SetInt("totalOpal", 2000);
+
         if (PlayerPrefs.GetInt("maxXp") >= maxXp)
         {
             levelBar.SetMaxXp(PlayerPrefs.GetInt("maxXp"));
