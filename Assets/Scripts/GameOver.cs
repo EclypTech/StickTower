@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class GameOver : MonoBehaviour
 {
     private Text opalSystem;
@@ -19,14 +20,44 @@ public class GameOver : MonoBehaviour
     public Text alertText;
     public int totalXp;
     public int highScore = 0;
+    public int resCheck;
+    public int doubleCheck;
+    private int opalCount;
+    [SerializeField] private GameObject showAdd;
+    [SerializeField] private GameObject doubleOpal;
 
-    
     void Start()
     {
         Time.timeScale = 0f;
+        resCheck = PlayerPrefs.GetInt("onemorechance");
+        doubleCheck = PlayerPrefs.GetInt("doubleOpal");
+        opalCount = PlayerPrefs.GetInt("totalOpal");
         xpSystem = GameObject.FindGameObjectWithTag("XP").GetComponent<XPsystem>().scoreText;
         opalSystem = GameObject.FindGameObjectWithTag("Opal").GetComponent<OpalSystem>().OpalscoreText;
-        
+
+        if(resCheck == 0)
+        {
+            showAdd.SetActive(true);
+
+        }
+        else
+        {
+            showAdd.SetActive(false);
+        }
+
+        if (doubleCheck == 0)
+        {
+            doubleOpal.SetActive(true);
+
+        }
+        else
+        {
+            doubleOpal.SetActive(false);
+            
+        }
+
+
+
         GetScores();
         
         
@@ -76,6 +107,20 @@ public class GameOver : MonoBehaviour
     public void OneChance()
     {
       
-       GameObject.Find("Player").GetComponent<DestroyPlayer>().OneMoreChance();
+        GameObject.Find("Player").GetComponent<DestroyPlayer>().OneMoreChance();
+        PlayerPrefs.SetInt("onemorechance", 1);
+    }
+
+    public void DoubleOpal()
+    {
+        newOpalScore = 2 * int.Parse(opalSystem.text);
+        newOpalScoreText.text = newOpalScore.ToString();
+        opalCount = opalCount + int.Parse(opalSystem.text);
+        PlayerPrefs.SetInt("totalOpal", opalCount);
+        doubleOpal.SetActive(false);
+        showAdd.SetActive(false);
+
+
+
     }
 }

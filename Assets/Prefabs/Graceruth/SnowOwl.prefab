@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3293886420052527210}
   m_Layer: 0
   m_Name: SnowOwl
-  m_TagString: enemy
+  m_TagString: NotEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -8,7 +8,8 @@ public class Stat_Counter : MonoBehaviour
     public int levelCounterNum;
     public int maxStat = 1;
     public int CurrentLevel;
-
+    [SerializeField] private GameObject statNotification;
+    [SerializeField] private Text notificationText;
 
     void Start()
     {
@@ -20,6 +21,16 @@ public class Stat_Counter : MonoBehaviour
             maxStat = CurrentLevel;
             Save();
         }
+
+        if(levelCounterNum > 0)
+        {
+            statNotification.SetActive(true);
+            notificationText.text = levelCounterNum.ToString();
+        }
+        else {
+            statNotification.SetActive(false);
+        }
+
 
     }
 

@@ -28,7 +28,7 @@ public class PauseMenu : MonoBehaviour
         PauseCanvas.SetActive(false); // Close the pause menu.
         Time.timeScale = 1f;          // Resume the time.
         GameIsPaused = false;
-        (Instantiate(ResumeCountDown, new Vector3(0f, 0f, 0f), Quaternion.identity) as GameObject).transform.parent = GameCanvas.transform;
+        (Instantiate(ResumeCountDown, new Vector3(0f, 0f, 0f), Quaternion.identity) as GameObject).transform.SetParent(GameCanvas.transform);
         // Value is false.
     }
 

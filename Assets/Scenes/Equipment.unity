@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1976206396242007024, guid: 802a479a7ef78244eb5ef6ad4e6601d0, type: 3}
+  m_Sprite: {fileID: -7410494799974450735, guid: a08b91a7d0b4bdf4d92bab3750e9d6e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -349,8 +349,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: if you are in trouble with vultures get your machette and kill them all
-    gently.
+  m_Text: if you are in trouble with flying creatures, get your machette and kill
+    them all gently.
 --- !u!222 &87979137
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2636,7 +2636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1976206396242007024, guid: 802a479a7ef78244eb5ef6ad4e6601d0, type: 3}
+  m_Sprite: {fileID: -7410494799974450735, guid: a08b91a7d0b4bdf4d92bab3750e9d6e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3266,7 +3266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1976206396242007024, guid: 802a479a7ef78244eb5ef6ad4e6601d0, type: 3}
+  m_Sprite: {fileID: -7410494799974450735, guid: a08b91a7d0b4bdf4d92bab3750e9d6e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

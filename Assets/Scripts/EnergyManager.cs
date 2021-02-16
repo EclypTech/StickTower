@@ -15,7 +15,7 @@ public class EnergyManager : MonoBehaviour
 
    
 
-    //public int totalEnergy;
+    private int totalOpal;
 
     private DateTime nextEnergyTime;
 
@@ -34,6 +34,8 @@ public class EnergyManager : MonoBehaviour
     public int changeSceneTo;
 
     public GameObject VideoPanel;
+
+    [SerializeField] private GameObject shopPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -173,7 +175,7 @@ public class EnergyManager : MonoBehaviour
         else
         {
             VideoPanel.SetActive(true);
-            Debug.Log("Git video izle kopek");
+            
         }
     }
 
@@ -197,6 +199,28 @@ public class EnergyManager : MonoBehaviour
         SetCurrentEnergy();
         VideoPanel.SetActive(false);
 
+    }
+
+    public void GiveEnergyWithOpal()
+    {
+        totalOpal = PlayerPrefs.GetInt("totalOpal");
+
+        if(totalOpal >= 50)
+        {
+            currentEnergy += 5;
+            energyBar.SetEnergy(currentEnergy);
+            SetCurrentEnergy();
+            totalOpal = totalOpal - 50;
+            PlayerPrefs.SetInt("totalOpal", totalOpal);
+            VideoPanel.SetActive(false);
+        }
+        else
+        {
+            shopPanel.SetActive(true);
+        }
+        
+        
+        
     }
 
 }

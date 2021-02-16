@@ -148,6 +148,7 @@ public class ItemController : MonoBehaviour
             SFX.GetComponent<SoundEffects>().Machette();
             collision.gameObject.transform.eulerAngles = new Vector2(180, 0) ;
             collision.gameObject.GetComponent<Animator>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             collision.gameObject.AddComponent<Rigidbody2D>();    
             SFX.GetComponent<SoundEffects>().VultureDead();
 
