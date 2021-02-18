@@ -10,6 +10,7 @@ public class LevelLoader : MonoBehaviour
     public Slider slider;
     private int sceneIndex;
     private int mapNum;
+    [SerializeField] private Text loadingValue;
     void Start()
     {
         mapNum = PlayerPrefs.GetInt("mapNum");
@@ -38,6 +39,7 @@ public class LevelLoader : MonoBehaviour
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
             slider.value = progress;
+            loadingValue.text = Mathf.Round(progress * 100).ToString();
             yield return null;
         }
     }
