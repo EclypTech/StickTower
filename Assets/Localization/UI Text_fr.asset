@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 4d4e637d22704c240bc5fc077bf19aa6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20737765376
+    m_Localized: Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3044713508864
+    m_Localized: le chargement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8168907288576
+    m_Localized: Equipements
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8376869269504
+    m_Localized: "Comp\xE9tences"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8678422949888
+    m_Localized: Magasin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8817946472448
+    m_Localized: Carte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8921122156544
+    m_Localized: "R\xE9glages"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9941256581120
+    m_Localized: "D\xE9sol\xE9, votre barre d'\xE9nergie est vide. Voulez-vous gagner
+      5 \xE9nergie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11602280656896
+    m_Localized: Musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12261528776704
+    m_Localized: Des sons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13324101169152
+    m_Localized: Escalade de base Pioche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13494784176128
+    m_Localized: pioches de base d'escalade sont les meilleurs amis pour les grimpeurs
+      et toujours avec vous.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14667381551104
+    m_Localized: Bottes Rocket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15023591206912
+    m_Localized: Ces bottes vous permet de monter plus vite et plus toutes les 10
+      secondes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15563410714624
+    m_Localized: Machette
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15890503512064
+    m_Localized: "si vous \xEAtes en difficult\xE9 avec les cr\xE9atures volantes,
+      obtenir votre machette et les tuer doucement."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16965180665856
+    m_Localized: Casque de forage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17216536915968
+    m_Localized: "Si vous \xEAtes fatigu\xE9 des chutes de pierres, porter ce casque
+      et le briser."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19421172150272
+    m_Localized: force de propulsion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19571516977152
+    m_Localized: Mouvement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19652823560192
+    m_Localized: Endurance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20469739761664
+    m_Localized: "Etes-vous s\xFBr de r\xE9initialiser vos statistiques \xE0 50 opale?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21306650210304
+    m_Localized: Oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21417748934656
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21906003668992
+    m_Localized: "Vos statistiques ont d\xE9j\xE0 \xE9t\xE9 remis \xE0 z\xE9ro."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22305167192064
+    m_Localized: d'accord
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22995683848192
+    m_Localized: Conditions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23216031608832
+    m_Localized: niveau 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23373536112640
+    m_Localized: Ouvrir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23479870107648
+    m_Localized: Annuler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015767941120
+    m_Localized: "vous ne r\xE9pondez pas aux exigences!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24774806941696
+    m_Localized: 'But :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24925827051520
+    m_Localized: "Score \xE9lev\xE9 :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25124066635776
+    m_Localized: 'Vivre :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25417667915776
+    m_Localized: "Voir la vid\xE9o pour"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25940110422016
+    m_Localized: "Regardez la vid\xE9o pour continuer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27169238626304
+    m_Localized: Nouveau record!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46786006822912
+    m_Localized: Voulez-vous acheter cet article?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86121468997632
+    m_Localized: acheter
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

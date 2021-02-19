@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 4d4e637d22704c240bc5fc077bf19aa6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20737765376
+    m_Localized: Spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3044713508864
+    m_Localized: wird geladen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8168907288576
+    m_Localized: "Ausr\xFCstungen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8376869269504
+    m_Localized: Kompetenzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8678422949888
+    m_Localized: "Gesch\xE4ft"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8817946472448
+    m_Localized: Karte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8921122156544
+    m_Localized: Einstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9941256581120
+    m_Localized: "Leider Ihre Energie-Bar ist leer. M\xF6chten Sie 5 Energie gewinnen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11602280656896
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12261528776704
+    m_Localized: "Ger\xE4usche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13324101169152
+    m_Localized: Grund Climbing Pickaxe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13494784176128
+    m_Localized: "Grund Climbing Pickel sind beste Freunde f\xFCr Kletterer und immer
+      mit Ihnen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14667381551104
+    m_Localized: Raketenstiefel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15023591206912
+    m_Localized: "Diese Stiefel k\xF6nnen Sie schneller klettern und alle 10 Sekunden
+      weiter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15563410714624
+    m_Localized: Machete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15890503512064
+    m_Localized: "wenn Sie in Schwierigkeiten mit fliegenden Kreaturen sind, erhalten
+      Sie Ihre Machete und t\xF6ten sie alle sanft."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16965180665856
+    m_Localized: Bohrer Helm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17216536915968
+    m_Localized: "Wenn Sie von fallenden Steinen m\xFCde sind, diesen Helm tragen
+      und es zerschlagen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19421172150272
+    m_Localized: Jump Kraft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19571516977152
+    m_Localized: Bewegung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19652823560192
+    m_Localized: Ausdauer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20469739761664
+    m_Localized: "Sind Sie sicher, Ihre Statistiken zu 50 opal zur\xFCcksetzen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21306650210304
+    m_Localized: Ja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21417748934656
+    m_Localized: Nein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21906003668992
+    m_Localized: "Ihre Statistiken wurden bereits zur\xFCckgesetzt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22305167192064
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22995683848192
+    m_Localized: Bedarf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23216031608832
+    m_Localized: Stufe 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23373536112640
+    m_Localized: Freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23479870107648
+    m_Localized: Stornieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015767941120
+    m_Localized: "Sie erf\xFCllen nicht die Anforderungen!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24774806941696
+    m_Localized: 'Ergebnis :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24925827051520
+    m_Localized: 'Highscore :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25124066635776
+    m_Localized: 'Erfahrung :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25417667915776
+    m_Localized: "Video anschauen f\xFCr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25940110422016
+    m_Localized: Video ansehen, um fortzufahren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27169238626304
+    m_Localized: Neuer Highscore!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46786006822912
+    m_Localized: "M\xF6chten Sie diesen Artikel kaufen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86121468997632
+    m_Localized: Kaufen
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

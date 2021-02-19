@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 4d4e637d22704c240bc5fc077bf19aa6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20737765376
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3044713508864
+    m_Localized: cargando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8168907288576
+    m_Localized: Equipos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8376869269504
+    m_Localized: Habilidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8678422949888
+    m_Localized: Tienda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8817946472448
+    m_Localized: Mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8921122156544
+    m_Localized: Ajustes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9941256581120
+    m_Localized: "Lo sentimos tu barra de energ\xEDa est\xE1 vac\xEDa. \xBFLe gustar\xEDa
+      ganar 5 energ\xE9tica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11602280656896
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12261528776704
+    m_Localized: sonidos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13324101169152
+    m_Localized: "Escalada b\xE1sica Pico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13494784176128
+    m_Localized: "piquetas Escalada b\xE1sicos son mejores amigos para escaladores
+      y siempre a su lado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14667381551104
+    m_Localized: Botas de cohetes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15023591206912
+    m_Localized: "Estas botas le permite subir m\xE1s y m\xE1s r\xE1pido cada 10
+      segundos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15563410714624
+    m_Localized: Machete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15890503512064
+    m_Localized: si se encuentra en problemas con criaturas voladoras, obtener su
+      machete y matarlos a todos con suavidad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16965180665856
+    m_Localized: "casco de perforaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17216536915968
+    m_Localized: "Si usted est\xE1 cansado de la ca\xEDda de rocas, llevar este casco
+      y destrozarlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19421172150272
+    m_Localized: salto Fuerza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19571516977152
+    m_Localized: Movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19652823560192
+    m_Localized: Aguante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20469739761664
+    m_Localized: "\xBFSeguro de que restablecer las estad\xEDsticas de 50 opal?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21306650210304
+    m_Localized: "s\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21417748934656
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21906003668992
+    m_Localized: "Sus estad\xEDsticas que ya se han restablecido."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22305167192064
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22995683848192
+    m_Localized: requisitos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23216031608832
+    m_Localized: nivel 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23373536112640
+    m_Localized: desbloquear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23479870107648
+    m_Localized: Cancelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24015767941120
+    m_Localized: usted no cumple con los requisitos!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24774806941696
+    m_Localized: 'Puntaje :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24925827051520
+    m_Localized: "Puntuaci\xF3n m\xE1s alta :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25124066635776
+    m_Localized: 'Experiencia :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25417667915776
+    m_Localized: Vea el video para
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25940110422016
+    m_Localized: Mira el video para continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27169238626304
+    m_Localized: "\xA1Nuevo record!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46786006822912
+    m_Localized: "\xBFQuieres comprar este art\xEDculo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86121468997632
+    m_Localized: comprar
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

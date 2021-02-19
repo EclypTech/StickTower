@@ -35,13 +35,13 @@ public class MapChanger : MonoBehaviour
         {
             ices.SetActive(false);
             miniMap.sprite = winderStone;
-            mountainName.text = "winderStone mountain";
+            mountainName.text = "winderStone";
         }
         else if(mapNum == 1)
         {
             miniMap.sprite = gracerath;
             ices.SetActive(true);
-            mountainName.text = "graceruth mountain";
+            mountainName.text = "graceruth";
         }
     }
 }
