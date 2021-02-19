@@ -4,21 +4,26 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
     public GameObject platformPrefab;                 // Define our game object platform prefab now.
+
+    public GameObject IcePrefab;
+
     public float rangeX = 2.5f;                       // Horizontal Range. 
     public float rangeY = 1.5f;                       // Lower limit of Y.
     public int num = 10;                              // Num = 3 for limit of the spawn number.
     public int score = 0;                             // Score = 0 which means number of climbed platforms.
     public Vector3 spawnPosition = new Vector3();     // Create new vector to determine spawn points.
     public int movNum = 20;
+    public int icenum = 15;
 
     void Start()                        // When start..
     {
         platformPrefab.GetComponent<MoveDen>().enabled = false;
         spawnPosition.y = -3;
 
-        for(int i = 0 ;i < 10 ; i++)
+        for (int i = 0 ;i < 10 ; i++)
         {
             GeneratorGeneral();         // Run Platform Generator at the beginning.(line34)
+
         }
     }
 
@@ -73,4 +78,5 @@ public class Generator : MonoBehaviour
         spawnPosition.z = 1;
         Instantiate(platformPrefab, spawnPosition, Quaternion.identity);        // Spawn platformPrefab take as basis spawn position.
     }
+
 }
