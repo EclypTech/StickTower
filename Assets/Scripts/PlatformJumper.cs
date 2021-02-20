@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlatformJumper : MonoBehaviour
 {
@@ -21,6 +23,14 @@ public class PlatformJumper : MonoBehaviour
                 Vector2 velocity = rb.velocity;  // Determine vector velocity for Rigidbody.
                 velocity.y = jumpForce;  // Add vertical force to velocity.
                 rb.velocity = velocity;  // Equal this vertical velocity to Rigidbody velocity.
+
+                int scenenum = SceneManager.GetActiveScene().buildIndex;
+
+                if (scenenum == 8)
+                {
+                    gameObject.AddComponent<Rigidbody2D>();
+                    rb.mass = 200;
+                }
             }
         }
     }
