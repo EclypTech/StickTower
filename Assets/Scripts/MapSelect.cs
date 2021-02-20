@@ -7,7 +7,8 @@ public class MapSelect : MonoBehaviour
     private int map;
     private int lockCheck;
     [SerializeField] private GameObject buyPanel;
-    [SerializeField] private GameObject Lock;
+    [SerializeField] private GameObject iceLock;
+    [SerializeField] private GameObject pyramidLock;
     [SerializeField] private GameObject shopPanel;
     [SerializeField] private GameObject reqPanel;
     // Start is called before the first frame update
@@ -35,6 +36,10 @@ public class MapSelect : MonoBehaviour
         {
             PlayerPrefs.SetInt("mapNum", mapNum);
         }
+        else if(mapNum == 2)
+        {
+            PlayerPrefs.SetInt("mapNum", mapNum);
+        }
     }
 
     public void UnlockMap()
@@ -52,7 +57,7 @@ public class MapSelect : MonoBehaviour
         {
             opal = opal - 150;
             PlayerPrefs.SetInt("totalOpal", opal);
-            Lock.SetActive(false);
+            iceLock.SetActive(false);
             buyPanel.SetActive(false);
             PlayerPrefs.SetInt("graceruthLock", 1);
 
@@ -74,7 +79,7 @@ public class MapSelect : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("graceruthLock") == 1)
         {
-            Lock.SetActive(false);
+            iceLock.SetActive(false);
         }
     }
 
