@@ -14093,9 +14093,9 @@ MonoBehaviour:
   machette: {fileID: 592754201}
   helmet: {fileID: 2145834257}
   itemSelectNum: 0
-  RockPrefab: {fileID: 9004879466276712170, guid: 5d22a86bce1a88444857d8aad1a5fe1d, type: 3}
+  RockPrefab: {fileID: 3236509220584869483, guid: e06be7e8fb352f849bd95c94b7ed167e, type: 3}
   SmashedRockPrefab: {fileID: 4782898664973580610, guid: 7aa87610d01b0584db21c5d011d97e7c, type: 3}
-  VulturePrefab: {fileID: 7942388138905316872, guid: 336bc8133ddeef1409f8c7865f221a23, type: 3}
+  VulturePrefab: {fileID: 8264791810933420280, guid: 4e4b816e75e969d4b9229a3d458fcb65, type: 3}
   flame1: {fileID: 1769379489}
   flame2: {fileID: 1485409186}
   maxForce: 100

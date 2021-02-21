@@ -12,7 +12,8 @@ public class MapChanger : MonoBehaviour
     [SerializeField] private Sprite winderStone;
     [SerializeField] private Sprite gracerath;
     [SerializeField] private Sprite pyramid;
-    [SerializeField] private GameObject ices;
+    [SerializeField] private Sprite lava;
+    //[SerializeField] private GameObject ices;
     private int mapNum;
 
 
@@ -34,21 +35,27 @@ public class MapChanger : MonoBehaviour
     {
         if(mapNum == 0)
         {
-            ices.SetActive(false);
+            //ices.SetActive(false);
             miniMap.sprite = winderStone;
             mountainName.text = "winderStone";
         }
         else if(mapNum == 1)
         {
             miniMap.sprite = gracerath;
-            ices.SetActive(true);
+//ices.SetActive(true);
             mountainName.text = "graceruth";
         }
         else if (mapNum == 2)
         {
             miniMap.sprite = pyramid;
-            ices.SetActive(false);
+            //ices.SetActive(false);
             mountainName.text = "Pyramid";
+        }
+        else if (mapNum == 3)
+        {
+            miniMap.sprite = lava;
+            //ices.SetActive(false);
+            mountainName.text = "Lavalbron";
         }
     }
 }

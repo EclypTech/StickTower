@@ -22,6 +22,10 @@ public class LevelLoader : MonoBehaviour
         {
             sceneIndex = 8;
         }
+        else if(mapNum == 3)
+        {
+            sceneIndex = 9;
+        }
         else
         {
             sceneIndex = 2;

@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 810880603758360586}
   - component: {fileID: 7638228658482107491}
   m_Layer: 0
-  m_Name: enemy_rock_sprite_0
-  m_TagString: enemy
+  m_Name: lava_rock_enemy
+  m_TagString: NotEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,9 +132,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.027085394, y: 0}
   serializedVersion: 2
-  m_Radius: 2.41
+  m_Radius: 0.5591508
 --- !u!50 &7638228658482107491
 Rigidbody2D:
   serializedVersion: 4

@@ -16,6 +16,7 @@ public class MapSelect : MonoBehaviour
     [SerializeField] private GameObject buyPanel;
     [SerializeField] private GameObject iceLock;
     [SerializeField] private GameObject pyramidLock;
+    [SerializeField] private GameObject lavaLock;
     [SerializeField] private GameObject shopPanel;
     [SerializeField] private GameObject reqPanel;
 
@@ -115,7 +116,7 @@ public class MapSelect : MonoBehaviour
             }
             else if(mapInt == 3)
             {
-                iceLock.SetActive(false);
+                lavaLock.SetActive(false);
             }
             
             buyPanel.SetActive(false);
@@ -144,6 +145,10 @@ public class MapSelect : MonoBehaviour
         if(PlayerPrefs.GetInt("pyramidLock") == 1)
         {
             pyramidLock.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("lavalbronLock") == 1)
+        {
+            lavaLock.SetActive(false);
         }
     }
 

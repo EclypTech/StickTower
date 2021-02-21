@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pyramid.unity
     guid: c140df67cf1d52d409da5ac1a5da9ff8
+  - enabled: 1
+    path: Assets/Scenes/LavaMountain.unity
+    guid: da746f44b684aa34ebd295e16a14f1c3
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 9f5ba37ecaf37724384717ed35e1a3ea, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: b42e1e98a078edc4089175bb1e8374a4, type: 2}
