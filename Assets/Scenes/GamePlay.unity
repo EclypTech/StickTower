@@ -7007,6 +7007,7 @@ GameObject:
   - component: {fileID: 993126774}
   - component: {fileID: 993126776}
   - component: {fileID: 993126775}
+  - component: {fileID: 993126777}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -7076,6 +7077,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993126773}
   m_CullTransparentMesh: 1
+--- !u!114 &993126777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993126773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:4d4e637d22704c240bc5fc077bf19aa6
+    m_TableEntryReference:
+      m_KeyId: 24774806941696
+      m_Key: 
+    m_FallbackState: 0
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 993126775}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &998078214
 GameObject:
   m_ObjectHideFlags: 0
@@ -14377,7 +14413,7 @@ MonoBehaviour:
   itemSelectNum: 0
   RockPrefab: {fileID: 7704474825079366278, guid: 5b5b8a42eee2cf34797616d7dbced05c, type: 3}
   SmashedRockPrefab: {fileID: 4782898664973580610, guid: 7aa87610d01b0584db21c5d011d97e7c, type: 3}
-  VulturePrefab: {fileID: 993416847290540938, guid: 3c2f59d91e6a23a42aa1c943cce366c2, type: 3}
+  VulturePrefab: {fileID: 8754022807553255499, guid: f44d98393c7833e4892cd7299273a0bd, type: 3}
   flame1: {fileID: 1383866306}
   flame2: {fileID: 291466513}
   maxForce: 100
@@ -14465,6 +14501,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5960917913773009097, guid: 92d9c6e8a7c1dc742843c61c066e3c48, type: 3}
+      propertyPath: vulture
+      value: 
+      objectReference: {fileID: 8300000, guid: d1febde40d8b6414a9d48fd5100171fb, type: 3}
+    - target: {fileID: 5960917913773009097, guid: 92d9c6e8a7c1dc742843c61c066e3c48, type: 3}
+      propertyPath: vultureDead
+      value: 
+      objectReference: {fileID: 8300000, guid: bb8db1ab56a54d64b8f76eacc50d678a, type: 3}
     - target: {fileID: 5960917913773009098, guid: 92d9c6e8a7c1dc742843c61c066e3c48, type: 3}
       propertyPath: m_RootOrder
       value: 5
