@@ -21,10 +21,14 @@ public class CountDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(countDown > 0)
+        if( countDown > 0 && countDown < 10)
         {
             countDown -= Time.unscaledDeltaTime;
             countDownText.text = ((int)countDown).ToString();
+        }
+        else if( countDown > 10 )
+        {
+            
         }
         else
         {
@@ -37,5 +41,10 @@ public class CountDown : MonoBehaviour
     void GoToMenu(int SceneId)
     {
         SceneManager.LoadScene(SceneId);
+    }
+
+    public void ChangeCountDown(int time)
+    {
+        countDown = time;
     }
 }

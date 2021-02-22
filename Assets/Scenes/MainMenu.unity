@@ -4044,6 +4044,7 @@ GameObject:
   - component: {fileID: 869251211}
   - component: {fileID: 869251214}
   - component: {fileID: 869251215}
+  - component: {fileID: 869251216}
   m_Layer: 0
   m_Name: ControllerMainMenu
   m_TagString: Untagged
@@ -4133,6 +4134,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78c64252379eb5f488b2a658dda06653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &869251216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869251210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276258c6989bedc4c89fb7790254a8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &875605072
@@ -8292,9 +8305,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 869251213}
-        m_TargetAssemblyTypeName: EnergyManager, Assembly-CSharp
-        m_MethodName: GiveEnergy
+      - m_Target: {fileID: 869251216}
+        m_TargetAssemblyTypeName: AdMob, Assembly-CSharp
+        m_MethodName: UserChoseToWatchAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
