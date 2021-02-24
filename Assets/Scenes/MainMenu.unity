@@ -5508,7 +5508,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 1
+  m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -9774,14 +9774,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211109702}
     m_Modifications:
-    - target: {fileID: 818748355834907876, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2114792057}
-    - target: {fileID: 2227431112740415155, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2114792057}
     - target: {fileID: 2565190645218812079, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
       propertyPath: m_Name
       value: ShopPanel
@@ -9870,23 +9862,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6701701398315606025, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2114792057}
     - target: {fileID: 7428112616244502616, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2114792057}
-    - target: {fileID: 8068378876874039850, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2114792057}
-    m_RemovedComponents:
-    - {fileID: 2227431112740415155, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
-    - {fileID: 8068378876874039850, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
-    - {fileID: 6701701398315606025, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
-    - {fileID: 818748355834907876, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
 --- !u!224 &5236956539229374373 stripped
 RectTransform:
