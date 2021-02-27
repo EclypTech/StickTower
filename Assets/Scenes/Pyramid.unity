@@ -10450,7 +10450,7 @@ MonoBehaviour:
   helmet: {fileID: 1680737777}
   itemSelectNum: 0
   RockPrefab: {fileID: 7704474825079366278, guid: 5b5b8a42eee2cf34797616d7dbced05c, type: 3}
-  SmashedRockPrefab: {fileID: 4782898664973580610, guid: 7aa87610d01b0584db21c5d011d97e7c, type: 3}
+  SmashedRockPrefab: {fileID: 4381084847292839779, guid: fec4d729efc918b49a7c00f1f28b1540, type: 3}
   VulturePrefab: {fileID: 993416847290540938, guid: 3c2f59d91e6a23a42aa1c943cce366c2, type: 3}
   flame1: {fileID: 345092066}
   flame2: {fileID: 123460335}

@@ -76,7 +76,7 @@ public class DoubleAd : MonoBehaviour
     public void CreateAndLoadRewardedAd()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/5224354917";
+        string adUnitId = "ca-app-pub-3693789240473561/2535926559";
 #elif UNITY_IPHONE
             string adUnitId = "ca-app-pub-3940256099942544/1712485313";
 #else

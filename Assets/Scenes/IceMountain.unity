@@ -622,7 +622,7 @@ MonoBehaviour:
   helmet: {fileID: 1632929521}
   itemSelectNum: 0
   RockPrefab: {fileID: 9004879466276712170, guid: 5d22a86bce1a88444857d8aad1a5fe1d, type: 3}
-  SmashedRockPrefab: {fileID: 4782898664973580610, guid: 7aa87610d01b0584db21c5d011d97e7c, type: 3}
+  SmashedRockPrefab: {fileID: 673641072707512448, guid: a9a57c9c92b425d4b9a199b3134d89e5, type: 3}
   VulturePrefab: {fileID: 7942388138905316872, guid: 336bc8133ddeef1409f8c7865f221a23, type: 3}
   flame1: {fileID: 1084761580}
   flame2: {fileID: 467012504}
@@ -1118,7 +1118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372013603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.32, z: 12}
+  m_LocalPosition: {x: 1.416, y: -0.424, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 719249575}

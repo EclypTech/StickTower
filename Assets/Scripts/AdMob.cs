@@ -20,7 +20,7 @@ public class AdMob : MonoBehaviour
         controllerMainMenu = GameObject.Find("ControllerMainMenu");
         string adUnitId;
         #if UNITY_ANDROID
-        adUnitId = "ca-app-pub-3940256099942544/5224354917";
+        adUnitId = "ca-app-pub-3693789240473561/9488633120";
         #elif UNITY_IPHONE
             adUnitId = "ca-app-pub-3940256099942544/1712485313";
         #else
@@ -94,7 +94,7 @@ public class AdMob : MonoBehaviour
     public void CreateAndLoadRewardedAd()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/5224354917";
+        string adUnitId = "ca-app-pub-3693789240473561/948863312";
 #elif UNITY_IPHONE
             string adUnitId = "ca-app-pub-3940256099942544/1712485313";
 #else

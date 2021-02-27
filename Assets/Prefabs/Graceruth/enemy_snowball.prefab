@@ -4848,7 +4848,7 @@ GameObject:
   - component: {fileID: 4187733755585492194}
   m_Layer: 0
   m_Name: enemy_snowball
-  m_TagString: enemy
+  m_TagString: NotEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4861,7 +4861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9004879466276712170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0381958, y: -1.774489, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0286355, y: 1.0286355, z: 1.0286355}
   m_Children:
   - {fileID: 2401857617294635223}
