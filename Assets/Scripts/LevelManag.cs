@@ -15,8 +15,8 @@ public class LevelManag : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetInt("playerLevel", 11);
-        PlayerPrefs.SetInt("totalOpal", 2000);
+        //PlayerPrefs.SetInt("playerLevel", 11);
+        //PlayerPrefs.SetInt("totalOpal", 2000);
         Time.timeScale = 1;
         if (PlayerPrefs.GetInt("maxXp") >= maxXp)
         {
