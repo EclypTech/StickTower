@@ -38,7 +38,7 @@ public class CountDown : MonoBehaviour
     }
     
 
-    void GoToMenu(int SceneId)
+    public void GoToMenu(int SceneId)
     {
         SceneManager.LoadScene(SceneId);
     }

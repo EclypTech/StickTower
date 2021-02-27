@@ -13501,6 +13501,8 @@ GameObject:
   - component: {fileID: 1738869473}
   - component: {fileID: 1738869472}
   - component: {fileID: 1738869475}
+  - component: {fileID: 1738869476}
+  - component: {fileID: 1738869477}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13593,6 +13595,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2118998383}
   smoothSpeed: 0.3
+--- !u!114 &1738869476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738869471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef5b53cea0f9f54993a2b33cc8f7ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adUnitId: 
+--- !u!114 &1738869477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738869471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e507f296cc253345aeba12ff6e3137a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adUnitId: 
 --- !u!1 &1834448493
 GameObject:
   m_ObjectHideFlags: 0
@@ -14254,6 +14282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyerPoint: {fileID: 0}
   GameOverCanvas: {fileID: 1716043222509544548, guid: 132b8cda6aa27cd4dbb6c2c0e581cd44, type: 3}
+  Pause: {fileID: 1305084819}
   ResumeCountDown: {fileID: 2332730204980428283, guid: 254d45aa49d8590459987998a61ddc86, type: 3}
   GameCanvas: {fileID: 956769692}
 --- !u!114 &2118998390

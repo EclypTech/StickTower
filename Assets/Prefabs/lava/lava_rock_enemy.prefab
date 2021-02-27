@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7638228658482107491}
   m_Layer: 0
   m_Name: lava_rock_enemy
-  m_TagString: NotEnemy
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

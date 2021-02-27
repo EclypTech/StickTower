@@ -133,11 +133,11 @@ PrefabInstance:
     - target: {fileID: 5960917913773009097, guid: 92d9c6e8a7c1dc742843c61c066e3c48, type: 3}
       propertyPath: vulture
       value: 
-      objectReference: {fileID: 8300000, guid: 91b95c7e1e654124791ebb425a84cc89, type: 3}
+      objectReference: {fileID: 8300000, guid: 92d12f7f867fccb45bc0962ced286c1e, type: 3}
     - target: {fileID: 5960917913773009097, guid: 92d9c6e8a7c1dc742843c61c066e3c48, type: 3}
       propertyPath: vultureDead
       value: 
-      objectReference: {fileID: 8300000, guid: bb8db1ab56a54d64b8f76eacc50d678a, type: 3}
+      objectReference: {fileID: 8300000, guid: c8a647b180ce9314dbcea83ec1f7a625, type: 3}
     - target: {fileID: 5960917913773009098, guid: 92d9c6e8a7c1dc742843c61c066e3c48, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2094,6 +2094,8 @@ GameObject:
   - component: {fileID: 847768539}
   - component: {fileID: 847768538}
   - component: {fileID: 847768537}
+  - component: {fileID: 847768542}
+  - component: {fileID: 847768541}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2186,6 +2188,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847768541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847768536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef5b53cea0f9f54993a2b33cc8f7ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adUnitId: 
+--- !u!114 &847768542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847768536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e507f296cc253345aeba12ff6e3137a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adUnitId: 
 --- !u!1 &869078837
 GameObject:
   m_ObjectHideFlags: 0
@@ -14235,6 +14263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyerPoint: {fileID: 0}
   GameOverCanvas: {fileID: 1716043222509544548, guid: 132b8cda6aa27cd4dbb6c2c0e581cd44, type: 3}
+  Pause: {fileID: 329851929}
   ResumeCountDown: {fileID: 2332730204980428283, guid: 254d45aa49d8590459987998a61ddc86, type: 3}
   GameCanvas: {fileID: 640622387}
 --- !u!114 &2098325699

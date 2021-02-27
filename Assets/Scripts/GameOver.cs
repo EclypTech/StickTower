@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameOver : MonoBehaviour
@@ -12,6 +13,7 @@ public class GameOver : MonoBehaviour
     public int newScore;
     public int newOpalScore;
     public int newHighScore;
+    private int sceneId = 1;
 
     public Text newScoreText;
     public Text newOpalScoreText;
@@ -122,5 +124,10 @@ public class GameOver : MonoBehaviour
 
 
 
+    }
+
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene(sceneId);
     }
 }

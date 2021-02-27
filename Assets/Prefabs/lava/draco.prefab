@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3548075149514413722}
   m_Layer: 0
   m_Name: draco
-  m_TagString: enemy
+  m_TagString: NotEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

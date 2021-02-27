@@ -7,17 +7,17 @@ using UnityEngine.SceneManagement;
 public class LevelManag : MonoBehaviour
 {
     public Text levelText;
-    public int neededXp = 500;
+    public int neededXp = 800;
     public int playerLevel = 1;
     public LevelBar levelBar;
     public int xp;
-    public int maxXp = 500;
+    public int maxXp = 800;
 
     void Start()
     {
-        //PlayerPrefs.SetInt("playerLevel", 11);
-        //PlayerPrefs.SetInt("totalOpal", 2000);
-
+        PlayerPrefs.SetInt("playerLevel", 11);
+        PlayerPrefs.SetInt("totalOpal", 2000);
+        Time.timeScale = 1;
         if (PlayerPrefs.GetInt("maxXp") >= maxXp)
         {
             levelBar.SetMaxXp(PlayerPrefs.GetInt("maxXp"));
@@ -34,6 +34,8 @@ public class LevelManag : MonoBehaviour
         Load();
         if (xp < neededXp)
         {
+            Debug.Log(neededXp + " needed_if");
+            Debug.Log(xp + " xp_if");
             neededXp = neededXp - xp;
             PlayerPrefs.SetInt("neededXp", neededXp);
             PlayerPrefs.SetInt("xp", 0);
@@ -45,15 +47,19 @@ public class LevelManag : MonoBehaviour
         {
             while (xp >= neededXp)
             {
+                Debug.Log(neededXp+" needed_while");
+                Debug.Log(xp+ " xp_while");
+                
                 xp = xp - neededXp;
                 playerLevel++;
-                maxXp = maxXp * playerLevel;
-                neededXp = maxXp;
+                maxXp = 800 * playerLevel;
+                neededXp = maxXp - xp;
                 levelText.text = playerLevel.ToString();
                 Save();
             }
+            PlayerPrefs.SetInt("xp", 0);
             levelBar.SetMaxXp(maxXp);
-            levelBar.SetXp(xp);
+            levelBar.SetXp(maxXp - neededXp);
         }
 
 

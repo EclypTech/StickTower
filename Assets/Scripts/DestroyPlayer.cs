@@ -6,6 +6,7 @@ public class DestroyPlayer : MonoBehaviour
 {
     public GameObject DestroyerPoint;  // Define Game object.
     public GameObject GameOverCanvas;
+    public GameObject Pause;
     [SerializeField] private GameObject ResumeCountDown;
     [SerializeField] private GameObject GameCanvas;
     private bool onetime = false;
@@ -26,6 +27,7 @@ public class DestroyPlayer : MonoBehaviour
         if (transform.position.y < DestroyerPoint.transform.position.y && !onetime )
         // If player has a lower vertical value from the lower limit of camera..
         {
+            Pause.SetActive(false);
             (Instantiate(GameOverCanvas, new Vector3(0f, 0f, 0f), Quaternion.identity) as GameObject).transform.SetParent(GameCanvas.transform);
             onetime = true;
         }
@@ -54,6 +56,7 @@ public class DestroyPlayer : MonoBehaviour
         Instantiate(ResumeCountDown, new Vector3(0, 0, 0), Quaternion.identity);
         rb.velocity = new Vector2(0 , 10);
         GetComponent<BoxCollider2D>().enabled = true;
+        Pause.SetActive(true);
 
 
     }
