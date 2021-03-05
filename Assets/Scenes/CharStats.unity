@@ -3562,6 +3562,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311357132}
     m_Modifications:
+    - target: {fileID: 249979388, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2527865280075260633, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_Text
+      value: 1000 OPAL
+      objectReference: {fileID: 0}
     - target: {fileID: 2565190645218812079, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
       propertyPath: m_Name
       value: ShopPanel
@@ -3569,6 +3577,14 @@ PrefabInstance:
     - target: {fileID: 2565190645218812079, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324083627771447274, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 161
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645178910411203413, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_Text
+      value: Get 1000 OPAL
       objectReference: {fileID: 0}
     - target: {fileID: 4009708125863092796, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
       propertyPath: m_Pivot.x
@@ -3653,6 +3669,26 @@ PrefabInstance:
     - target: {fileID: 4009708125863092796, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088367977977322315, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_Text
+      value: 500 OPAL
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124978440403425471, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 161
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897870613740504673, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 361.3615
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897870613740504673, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.3858
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897870613740504673, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 7428112616244502616, guid: e89f61f952d004d42a8177ce115239f1, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
